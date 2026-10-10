@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>UdharGuru Features - Digital Khata, Interest Calculator, WhatsApp Reminders & Invoicing</title>
+  <meta name="description" content="Explore all features of UdharGuru: Digital Bahi Khata, Automated Simple & Compound Interest Calculator, WhatsApp Payment Collection, GST Invoices, and Inventory Tracker. Developed by Guruji Tech Point.">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" type="image/png" href="assets/images/app_icon.png">
+</head>
+<body>
+
+  <!-- Top Announcement Bar -->
+  <div class="top-bar">
+    <span class="badge">🔥 NEW</span>
+    <span>Automated Interest Calculator & 1-Click WhatsApp Payment Collection are now live in UdharGuru!</span>
+    <span style="margin-left: auto; display: inline-flex; align-items: center; gap: 0.4rem; font-size: 0.8rem; background: rgba(0,0,0,0.25); padding: 0.2rem 0.7rem; border-radius: 99px;">
+      ⚡ Developed by Guruji Tech Point
+    </span>
+  </div>
+
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="container nav-wrapper">
+      <a href="index.html" class="brand-logo">
+        <div class="logo-badge">
+          <img src="assets/images/app_icon.png" alt="UdharGuru Official App Icon">
+        </div>
+        <div class="logo-text">
+          <span class="logo-main">UdharGuru</span>
+          <span class="logo-sub">Digital Ledger App</span>
+        </div>
+      </a>
+
+      <div class="nav-links">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="index.html#about" class="nav-link">About UdharGuru</a>
+        <a href="security.html" class="nav-link">Security</a>
+        <a href="privacy.html" class="nav-link">Privacy</a>
+        <a href="terms.html" class="nav-link">Terms</a>
+        <a href="#download" class="nav-link">Download App</a>
+      </div>
+
+      <div class="nav-actions">
+        <!-- Interactive Animated Puggy Download CTA -->
+        <div class="puggy-download-btn-container nav-btn-container">
+          <img src="assets/images/puggy_button_mascot.png" class="puggy-mascot-transparent" alt="Cartoon Puggy Mascot">
+          <button class="btn-download-main trigger-download-modal" id="navDownloadBtn">
+            <span class="download-icon">⬇</span>
+            <span>Download</span>
+            <span class="btn-paw-panja">🐾</span>
+            <span class="paw-ripple"></span>
+          </button>
+        </div>
+        <button class="nav-mobile-btn" aria-label="Toggle navigation">☰</button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Features Page Hero with Mascot -->
+  <header class="hero-section" style="padding: 3rem 0;">
+    <div class="container hero-grid">
+      <div class="hero-content">
+        <div class="pill-badge">
+          <span class="pulse-dot"></span>
+          <span>Engineered by Guruji Tech Point • Smart Retail Suite 2026</span>
+        </div>
+        <h1 class="hero-title" style="font-family: var(--font-main);">
+          Smart & Powerful Features <br>
+          <span class="highlight">for Modern Shopkeepers</span>
+        </h1>
+        <p class="hero-subtitle">
+          Meet <strong>Chintu the Tech Puggy</strong>! UdharGuru replaces chaotic paper notebooks, missed entries, and awkward debt collection with automated digital intelligence and instant cloud synchronization.
+        </p>
+
+        <div class="hero-actions">
+          <div class="puggy-download-btn-container">
+            <img src="assets/images/puggy_button_mascot.png" class="puggy-mascot-transparent" alt="Cartoon Puggy Mascot">
+            <button class="btn-download-main trigger-download-modal">
+              <span class="download-icon">⬇</span>
+              <span>Install Free App</span>
+              <span class="btn-paw-panja">🐾</span>
+              <span class="btn-badge">FREE</span>
+              <span class="paw-ripple"></span>
+            </button>
+          </div>
+          <a href="calculator.html" class="btn-secondary">Try Interest Tool →</a>
+        </div>
+      </div>
+
+      <!-- Mascot Visual for Features Page -->
+      <div class="hero-visual">
+        <div class="mascot-card-wrapper">
+          <div class="mascot-image-container">
+            <img src="assets/images/puggy_features.jpg" alt="Chintu the Tech Puggy with smart invoices and WhatsApp reminder">
+          </div>
+          <div class="floating-badge badge-bottom-right" style="bottom: -15px; right: -15px;">
+            <div class="badge-icon green">
+              <img src="assets/images/app_icon.png" style="width: 28px; height: 28px; border-radius: 6px;" alt="Icon">
+            </div>
+            <div class="badge-details">
+              <h5>Chintu Tech Puggy</h5>
+              <p>Smart Features Navigator</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Detailed Feature Modules -->
+  <section class="demo-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Deep-Dive Modules</span>
+        <h2 class="section-title" style="font-family: var(--font-main);">Everything You Need to Run Your Shop</h2>
+        <p class="section-desc">Credit ledgers, automated interest calculation, invoicing, and stock control in one unified platform.</p>
+      </div>
+
+      <div style="display: flex; flex-direction: column; gap: 3.5rem;">
+        
+        <!-- Feature 1: Digital Khata -->
+        <div id="khata" style="display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; align-items: center; background: #ffffff; padding: 2.5rem; border-radius: var(--radius-xl); border: 1px solid var(--color-border); box-shadow: var(--shadow-md);">
+          <div>
+            <span style="font-size: 0.82rem; font-weight: 800; color: #ea580c; text-transform: uppercase;">MODULE 01</span>
+            <h3 style="font-size: 1.85rem; font-weight: 800; color: #0f172a; margin: 0.5rem 0 1rem; font-family: var(--font-main);">Digital Customer & Supplier Ledger</h3>
+            <p style="color: #64748b; line-height: 1.7; margin-bottom: 1.25rem;">
+              Stop searching through thick paper registers and calculating totals by hand. In UdharGuru, simply type a customer's name or phone number to view their entire transaction history in seconds.
+            </p>
+            <ul style="display: flex; flex-direction: column; gap: 0.65rem; color: #1e293b; font-weight: 600; font-size: 0.95rem;">
+              <li>✓ <strong>Debit (Udhar) and Credit (Jama)</strong> entries logged in 1 second</li>
+              <li>✓ Attach bill photos and item receipts directly to records</li>
+              <li>✓ Real-time net balance calculations with zero rounding errors</li>
+              <li>✓ Separate supplier ledger to monitor wholesale purchases and repayments</li>
+            </ul>
+          </div>
+          <div style="background: #f8fafc; border: 2px dashed #cbd5e1; border-radius: var(--radius-lg); padding: 2rem; text-align: center;">
+            <div style="font-size: 3.5rem; margin-bottom: 0.5rem;">📖</div>
+            <h4 style="font-size: 1.2rem; font-weight: 800; color: #0f172a; font-family: var(--font-main);">100% Paperless Digital Store</h4>
+            <p style="font-size: 0.88rem; color: #64748b; margin-top: 0.5rem;">Even if notebooks get wet, torn, or misplaced, your business balance is always safe.</p>
+          </div>
+        </div>
+
+        <!-- Feature 2: Automatic Byaj Calculator -->
+        <div id="byaj" style="display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; align-items: center; background: #ffffff; padding: 2.5rem; border-radius: var(--radius-xl); border: 1px solid var(--color-border); box-shadow: var(--shadow-md);">
+          <div style="order: 2;">
+            <span style="font-size: 0.82rem; font-weight: 800; color: #d97706; text-transform: uppercase;">MODULE 02</span>
+            <h3 style="font-size: 1.85rem; font-weight: 800; color: #0f172a; margin: 0.5rem 0 1rem; font-family: var(--font-main);">Automated Interest (Byaj) Calculator Engine</h3>
+            <p style="color: #64748b; line-height: 1.7; margin-bottom: 1.25rem;">
+              Designed specifically for Indian business practices. Seamlessly calculate monthly interest rates (e.g., 2% or 3% per month) as well as annualized compounding.
+            </p>
+            <ul style="display: flex; flex-direction: column; gap: 0.65rem; color: #1e293b; font-weight: 600; font-size: 0.95rem;">
+              <li>✓ <strong>Simple and Compound Interest</strong> modes supported out of the box</li>
+              <li>✓ Configure custom monthly or annual interest rates per customer</li>
+              <li>✓ Accrued interest automatically merges into total balance on scheduled dates</li>
+              <li>✓ Share transparent, dispute-free interest statements directly via WhatsApp</li>
+            </ul>
+            <div style="margin-top: 1.5rem;">
+              <a href="calculator.html" class="btn-secondary" style="border-color:#f59e0b; color:#d97706;">Try Online Calculator →</a>
+            </div>
+          </div>
+          <div style="background: #fffbeb; border: 2px dashed #fcd34d; border-radius: var(--radius-lg); padding: 2rem; text-align: center; order: 1;">
+            <div style="font-size: 3.5rem; margin-bottom: 0.5rem;">🧮</div>
+            <h4 style="font-size: 1.2rem; font-weight: 800; color: #92400e; font-family: var(--font-main);">Accurate Daily & Monthly Interest</h4>
+            <p style="font-size: 0.88rem; color: #b45309; margin-top: 0.5rem;">No mathematical mistakes, eliminates misunderstandings between buyers and sellers.</p>
+          </div>
+        </div>
+
+        <!-- Feature 3: WhatsApp Reminders -->
+        <div id="reminders" style="display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; align-items: center; background: #ffffff; padding: 2.5rem; border-radius: var(--radius-xl); border: 1px solid var(--color-border); box-shadow: var(--shadow-md);">
+          <div>
+            <span style="font-size: 0.82rem; font-weight: 800; color: #25d366; text-transform: uppercase;">MODULE 03</span>
+            <h3 style="font-size: 1.85rem; font-weight: 800; color: #0f172a; margin: 0.5rem 0 1rem; font-family: var(--font-main);">1-Click WhatsApp Payment Collection</h3>
+            <p style="color: #64748b; line-height: 1.7; margin-bottom: 1.25rem;">
+              Feel hesitant to call customers repeatedly for pending dues? UdharGuru crafts polite, professional reminders complete with an instant UPI payment link.
+            </p>
+            <ul style="display: flex; flex-direction: column; gap: 0.65rem; color: #1e293b; font-weight: 600; font-size: 0.95rem;">
+              <li>✓ Send balance summaries directly to customer's WhatsApp in 1 click</li>
+              <li>✓ Integrated Google Pay, PhonePe, Paytm, and BHIM UPI links</li>
+              <li>✓ Merchants experience 3x faster repayment cycles and healthier cash flow</li>
+              <li>✓ Free SMS backup alerts for customers without active data connections</li>
+            </ul>
+          </div>
+          <div style="background: #f0fdf4; border: 2px dashed #86efac; border-radius: var(--radius-lg); padding: 2rem; text-align: center;">
+            <div style="font-size: 3.5rem; margin-bottom: 0.5rem;">💬</div>
+            <h4 style="font-size: 1.2rem; font-weight: 800; color: #166534; font-family: var(--font-main);">Respectful Reminders, 3x Faster Cash Flow</h4>
+            <p style="font-size: 0.88rem; color: #15803d; margin-top: 0.5rem;">Maintain customer relationships while protecting your working capital.</p>
+          </div>
+        </div>
+
+        <!-- Feature 4: GST Billing -->
+        <div id="billing" style="display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; align-items: center; background: #ffffff; padding: 2.5rem; border-radius: var(--radius-xl); border: 1px solid var(--color-border); box-shadow: var(--shadow-md);">
+          <div style="order: 2;">
+            <span style="font-size: 0.82rem; font-weight: 800; color: #2563eb; text-transform: uppercase;">MODULE 04</span>
+            <h3 style="font-size: 1.85rem; font-weight: 800; color: #0f172a; margin: 0.5rem 0 1rem; font-family: var(--font-main);">GST & Non-GST Invoicing & Billing</h3>
+            <p style="color: #64748b; line-height: 1.7; margin-bottom: 1.25rem;">
+              Create polished PDF bills featuring your shop name, logo, and terms. Print via Bluetooth thermal printers or share instantly over WhatsApp.
+            </p>
+            <ul style="display: flex; flex-direction: column; gap: 0.65rem; color: #1e293b; font-weight: 600; font-size: 0.95rem;">
+              <li>✓ Add shop logo, address, contact details, and GSTIN number</li>
+              <li>✓ Auto-calculate item quantity, unit prices, discounts, and GST slabs</li>
+              <li>✓ Invoiced amounts automatically post to the customer's ledger balance</li>
+              <li>✓ Supports 2-inch and 3-inch Bluetooth thermal receipt printers</li>
+            </ul>
+          </div>
+          <div style="background: #eff6ff; border: 2px dashed #93c5fd; border-radius: var(--radius-lg); padding: 2rem; text-align: center; order: 1;">
+            <div style="font-size: 3.5rem; margin-bottom: 0.5rem;">🧾</div>
+            <h4 style="font-size: 1.2rem; font-weight: 800; color: #1e40af; font-family: var(--font-main);">Give Your Shop a Professional Brand Identity</h4>
+            <p style="font-size: 0.88rem; color: #2563eb; margin-top: 0.5rem;">Professional invoices inspire customer confidence and trust.</p>
+          </div>
+        </div>
+
+        <!-- Feature 5: Inventory & Stock -->
+        <div id="inventory" style="display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; align-items: center; background: #ffffff; padding: 2.5rem; border-radius: var(--radius-xl); border: 1px solid var(--color-border); box-shadow: var(--shadow-md);">
+          <div>
+            <span style="font-size: 0.82rem; font-weight: 800; color: #7c3aed; text-transform: uppercase;">MODULE 05</span>
+            <h3 style="font-size: 1.85rem; font-weight: 800; color: #0f172a; margin: 0.5rem 0 1rem; font-family: var(--font-main);">Inventory & Stock Management</h3>
+            <p style="color: #64748b; line-height: 1.7; margin-bottom: 1.25rem;">
+              Always know which products are running low, what your current inventory is worth, and which items generate the highest gross profit margins.
+            </p>
+            <ul style="display: flex; flex-direction: column; gap: 0.65rem; color: #1e293b; font-weight: 600; font-size: 0.95rem;">
+              <li>✓ Rapid product barcode scanning via smartphone camera</li>
+              <li>✓ Intelligent low-stock notifications to prevent stockouts</li>
+              <li>✓ Daily, weekly, and monthly sales margin analytics</li>
+              <li>✓ Dual pricing support for wholesale and retail</li>
+            </ul>
+          </div>
+          <div style="background: #f5f3ff; border: 2px dashed #c4b5fd; border-radius: var(--radius-lg); padding: 2rem; text-align: center;">
+            <div style="font-size: 3.5rem; margin-bottom: 0.5rem;">📦</div>
+            <h4 style="font-size: 1.2rem; font-weight: 800; color: #5b21b6; font-family: var(--font-main);">Zero Stock Waste, Maximum Profitability</h4>
+            <p style="font-size: 0.88rem; color: #6d28d9; margin-top: 0.5rem;">Accurate inventory insight protects your margins and optimizes purchases.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Download CTA with Animated Puggy -->
+  <section class="download-cta-section">
+    <div class="container">
+      <div class="download-cta-banner">
+        <div class="cta-text-side">
+          <div style="display:flex; align-items:center; gap:0.85rem; margin-bottom:1rem;">
+            <img src="assets/images/app_icon.png" style="width:54px; height:54px; border-radius:14px; box-shadow:0 6px 16px rgba(0,0,0,0.3);" alt="UdharGuru Icon">
+            <div>
+              <span style="font-size:0.82rem; font-weight:800; color:#fef08a; text-transform:uppercase; letter-spacing:0.06em;">Official App Release</span>
+              <h4 style="margin:0; font-size:1.15rem; color:#ffffff;">UdharGuru App</h4>
+            </div>
+          </div>
+          <h2 style="font-family: var(--font-main);">Digitize Your Business Today with Chintu Tech Puggy!</h2>
+          <p>Download UdharGuru and experience complete business peace of mind for free.</p>
+          <div class="puggy-download-btn-container">
+            <img src="assets/images/puggy_button_mascot.png" class="puggy-mascot-transparent" alt="Cartoon Puggy Mascot">
+            <button class="btn-download-main trigger-download-modal">
+              <span class="download-icon">⬇</span>
+              <span>Download Free App</span>
+              <span class="btn-paw-panja">🐾</span>
+              <span class="paw-ripple"></span>
+            </button>
+          </div>
+        </div>
+
+        <div class="cta-puggy-visual">
+          <div class="cta-puggy-box">
+            <img src="assets/images/puggy_download_click.jpg" alt="Animated Puggy Mascot clicking download button">
+            <div class="cta-interactive-tag">
+              <span>🐾 Tap the download button to start!</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Download Modal -->
+  <div class="modal-backdrop" id="downloadModal">
+    <div class="modal-content-card">
+      <button class="modal-close-btn" aria-label="Close modal">✕</button>
+      <div class="modal-grid">
+        <div class="modal-puggy-side">
+          <img src="assets/images/puggy_download_click.jpg" class="modal-puggy-img" alt="Puggy Mascot clicking">
+          <h4 style="font-weight: 800; color: #92400e; font-size: 1.15rem;">Puggy is Here!</h4>
+          <p style="font-size: 0.85rem; color: #b45309; margin-top: 0.25rem;">Download UdharGuru App for free and make your bookkeeping simple.</p>
+        </div>
+
+        <div class="modal-form-side">
+          <div style="display:flex; align-items:center; gap:0.75rem; margin-bottom:1rem;">
+            <img src="assets/images/app_icon.png" style="width:48px; height:48px; border-radius:12px; box-shadow:0 4px 10px rgba(0,0,0,0.15);" alt="UdharGuru App">
+            <div>
+              <h3 style="font-size: 1.35rem; font-weight: 800; color: #0f172a; margin:0; line-height:1.2;">UdharGuru App</h3>
+              <span style="font-size: 0.78rem; color: #ea580c; font-weight: 700;">★ 4.8 • 10,000+ Merchants</span>
+            </div>
+          </div>
+          <p style="font-size: 0.88rem; color: #64748b; margin-bottom: 1.25rem;">Receive download link directly on your mobile or install via official stores:</p>
+
+          <div style="display: flex; gap: 0.5rem; margin-bottom: 1rem;">
+            <input type="tel" id="appPhoneInput" class="form-input" placeholder="10-digit mobile number" maxlength="10">
+            <button id="btnSendAppLink" class="btn-download-main" style="padding: 0.6rem 1.2rem; white-space: nowrap; font-size: 0.88rem;">
+              <span>Send Link</span>
+            </button>
+          </div>
+
+          <!-- Google Play Store QR Scanner & Direct Link -->
+          <a href="https://play.google.com/store/apps/details?id=com.udharkhata.akhil" target="_blank" class="qr-container">
+            <div class="qr-box">
+              <img src="assets/images/playstore_qr.png" alt="Google Play Store QR Code">
+            </div>
+            <div style="flex: 1;">
+              <div style="display:flex; align-items:center; gap:0.35rem; margin-bottom:0.15rem;">
+                <span style="font-size:0.75rem; font-weight:800; color:#ea580c; text-transform:uppercase; letter-spacing:0.04em;">Official Google Play Link</span>
+              </div>
+              <h5 style="font-size: 0.95rem; font-weight: 800; color: #0f172a; margin: 0;">Scan or Tap to Open</h5>
+              <p style="font-size: 0.78rem; color: #64748b; margin: 0.15rem 0 0;">Instantly opens app page on Google Play Store →</p>
+            </div>
+          </a>
+
+          <div style="display: flex; gap: 0.75rem; margin-top: 0.5rem;">
+            <a href="https://play.google.com/store/apps/details?id=com.udharkhata.akhil" target="_blank" class="store-badge-card" style="flex:1; justify-content:center; padding:0.55rem;">
+              <span class="store-icon" style="font-size:1.2rem;">▶</span>
+              <span style="font-size:0.82rem; font-weight:700;">Google Play</span>
+            </a>
+            <a href="https://firebasestorage.googleapis.com/v0/b/udharkhata-9199b.firebasestorage.app/o/udharguru%2Fapp-arm64-v8a-release.apk?alt=media&token=521b6034-58a9-446d-8a49-490777621824" target="_blank" class="store-badge-card" style="flex:1; justify-content:center; padding:0.55rem; background: rgba(245, 158, 11, 0.08); border-color: rgba(245, 158, 11, 0.3);">
+              <span class="store-icon" style="font-size:1.2rem;">📥</span>
+              <span style="font-size:0.82rem; font-weight:700;">Direct APK</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <!-- Developed by Guruji Tech Point Showcase Card -->
+      <div class="developer-credit-card">
+        <div class="dev-credit-left">
+          <div class="dev-badge-avatar">
+            <img src="assets/images/developer_badge.png" alt="Guruji Tech Point 3D Developer Avatar">
+          </div>
+          <div class="dev-credit-info">
+            <h4>
+              <span>Crafted & Developed by Guruji Tech Point</span>
+              <span class="verified-tag">✓ Verified Engineering</span>
+            </h4>
+            <p>Architected with modern standards for extreme speed, bank-grade encryption, and seamless merchant user experience.</p>
+            <div class="dev-tech-tags">
+              <span class="dev-tech-tag">⚡ Full-Stack Web</span>
+              <span class="dev-tech-tag">📱 Android & iOS Apps</span>
+              <span class="dev-tech-tag">🔒 256-bit Security</span>
+              <span class="dev-tech-tag">🚀 FinTech Architecture</span>
+            </div>
+          </div>
+        </div>
+        <div class="dev-credit-right">
+          <a href="contact.html" class="dev-contact-btn">
+            <span>💻 Guruji Tech Point</span>
+            <span>→</span>
+          </a>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>© 2026 UdharGuru Technologies Pvt Ltd. Developed by <strong>Guruji Tech Point</strong>. All rights reserved.</div>
+        <div style="display:flex; gap:1.25rem; flex-wrap:wrap; margin-top:0.5rem;">
+          <a href="index.html" style="color:#94a3b8;">Home</a>
+          <a href="security.html" style="color:#94a3b8;">Security</a>
+          <a href="privacy.html" style="color:#94a3b8;">Privacy Policy</a>
+          <a href="terms.html" style="color:#94a3b8;">Terms</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

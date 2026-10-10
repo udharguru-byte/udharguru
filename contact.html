@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact & 24/7 Merchant Support | UdharGuru</title>
+  <meta name="description" content="UdharGuru Merchant Support & Helpdesk: Connect directly via WhatsApp, phone, or online inquiry form for setup assistance and troubleshooting. Developed by Guruji Tech Point.">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" type="image/png" href="assets/images/app_icon.png">
+</head>
+<body>
+
+  <!-- Top Announcement Bar -->
+  <div class="top-bar">
+    <span class="badge">💬 24/7 LIVE</span>
+    <span>WhatsApp Live Support is active — average response time under 2 minutes!</span>
+    <span style="margin-left: auto; display: inline-flex; align-items: center; gap: 0.4rem; font-size: 0.8rem; background: rgba(0,0,0,0.25); padding: 0.2rem 0.7rem; border-radius: 99px;">
+      ⚡ Developed by Guruji Tech Point
+    </span>
+  </div>
+
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="container nav-wrapper">
+      <a href="index.html" class="brand-logo">
+        <div class="logo-badge">
+          <img src="assets/images/app_icon.png" alt="UdharGuru Official App Icon">
+        </div>
+        <div class="logo-text">
+          <span class="logo-main">UdharGuru</span>
+          <span class="logo-sub">Digital Ledger App</span>
+        </div>
+      </a>
+
+      <div class="nav-links">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="index.html#about" class="nav-link">About UdharGuru</a>
+        <a href="security.html" class="nav-link">Security</a>
+        <a href="privacy.html" class="nav-link">Privacy</a>
+        <a href="terms.html" class="nav-link">Terms</a>
+        <a href="#download" class="nav-link">Download App</a>
+      </div>
+
+      <div class="nav-actions">
+        <!-- Interactive Animated Puggy Download CTA -->
+        <div class="puggy-download-btn-container nav-btn-container">
+          <img src="assets/images/puggy_button_mascot.png" class="puggy-mascot-transparent" alt="Cartoon Puggy Mascot">
+          <button class="btn-download-main trigger-download-modal" id="navDownloadBtn">
+            <span class="download-icon">⬇</span>
+            <span>Download</span>
+            <span class="btn-paw-panja">🐾</span>
+            <span class="paw-ripple"></span>
+          </button>
+        </div>
+        <button class="nav-mobile-btn" aria-label="Toggle navigation">☰</button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero with Helpdesk Puggy Mascot -->
+  <header class="hero-section" style="padding: 3rem 0 2rem;">
+    <div class="container hero-grid">
+      <div class="hero-content">
+        <div class="pill-badge">
+          <span class="pulse-dot"></span>
+          <span>Engineered by Guruji Tech Point • Dedicated Merchant Helpdesk</span>
+        </div>
+        <h1 class="hero-title" style="font-family: var(--font-main);">
+          Helpdesk Puggy & <br>
+          <span class="highlight">24/7 Merchant Support</span>
+        </h1>
+        <p class="hero-subtitle">
+          Meet <strong>Helpdesk Puggy</strong>! Whether downloading the application, migrating your existing bahi-khata, or configuring interest schedules—our merchant care specialists are always just one message away.
+        </p>
+
+        <div class="hero-actions">
+          <a href="https://wa.me/918434029421?text=Hello%20UdharGuru,%20I%20would%20like%20assistance%20with%20the%20app" target="_blank" class="btn-download-main" style="background: #25d366; box-shadow: 0 4px 18px rgba(37, 211, 102, 0.4);">
+            <span>💬 Chat on WhatsApp (+91 8434029421)</span>
+          </a>
+          <button class="btn-secondary trigger-download-modal">
+            <span>📲 Download App</span>
+          </button>
+        </div>
+      </div>
+
+      <!-- Mascot Visual for Contact Page -->
+      <div class="hero-visual">
+        <div class="mascot-card-wrapper">
+          <div class="mascot-image-container">
+            <img src="assets/images/puggy_contact.jpg" alt="Helpdesk Puggy wearing customer support headset at desk">
+          </div>
+          <div class="floating-badge badge-bottom-right" style="bottom: -15px; right: -15px;">
+            <div class="badge-icon green">
+              <img src="assets/images/app_icon.png" style="width: 28px; height: 28px; border-radius: 6px;" alt="Icon">
+            </div>
+            <div class="badge-details">
+              <h5>Helpdesk Puggy</h5>
+              <p>24/7 Live Care Partner</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Interactive Contact Form & Channels -->
+  <section class="demo-section">
+    <div class="container contact-grid">
+      
+      <!-- Contact Form Side -->
+      <div class="contact-form-card">
+        <h3 style="font-size: 1.55rem; font-weight: 800; color: #0f172a; margin-bottom: 0.5rem; font-family: var(--font-main);">Send a Message</h3>
+        <p style="font-size: 0.9rem; color: #64748b; margin-bottom: 1.75rem;">Fill out the form below. A dedicated merchant success specialist will contact you within 15 minutes.</p>
+
+        <form id="udharGuruContactForm">
+          <div class="form-group">
+            <label for="contactName">Your Full Name</label>
+            <input type="text" id="contactName" class="form-input" placeholder="e.g. Rajesh Kumar" required>
+          </div>
+
+          <div class="form-group">
+            <label for="contactShop">Store / Business Name</label>
+            <input type="text" id="contactShop" class="form-input" placeholder="e.g. Apex Supermarket" required>
+          </div>
+
+          <div class="form-group">
+            <label for="contactPhone">Mobile Number (WhatsApp Enabled)</label>
+            <input type="tel" id="contactPhone" class="form-input" placeholder="e.g. 9876543210" maxlength="10" required>
+          </div>
+
+          <div class="form-group">
+            <label for="contactTopic">Inquiry Topic</label>
+            <select id="contactTopic" class="form-select">
+              <option value="khata">Account Setup Assistance</option>
+              <option value="byaj">Interest Calculator Configuration</option>
+              <option value="pro">Vyapar Pro Plan & Billing Inquiries</option>
+              <option value="backup">Data Backup & Device Switch</option>
+              <option value="other">General Feedback & Other</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="contactMessage">Your Message</label>
+            <textarea id="contactMessage" class="form-textarea" rows="3" placeholder="How can our support team assist you today?"></textarea>
+          </div>
+
+          <button type="submit" class="btn-download-main" style="width: 100%; justify-content: center; padding: 0.9rem;">
+            <span>📩 Send Message (Submit)</span>
+          </button>
+        </form>
+      </div>
+
+      <!-- Contact Details & Info Cards -->
+      <div style="display: flex; flex-direction: column; gap: 1.5rem; justify-content: center;">
+        
+        <div style="background: #ffffff; padding: 1.75rem; border-radius: var(--radius-lg); border: 1px solid var(--color-border); box-shadow: var(--shadow-sm); display: flex; align-items: flex-start; gap: 1.25rem;">
+          <div style="width: 48px; height: 48px; border-radius: 12px; background: #dcfce7; color: #166534; display: flex; align-items: center; justify-content: center; font-size: 1.5rem;">
+            📲
+          </div>
+          <div>
+            <h4 style="font-size: 1.1rem; font-weight: 800; color: #0f172a; margin-bottom: 0.25rem; font-family: var(--font-main);">Instant WhatsApp Help</h4>
+            <p style="font-size: 0.88rem; color: #64748b; margin-bottom: 0.5rem;">Share screenshots and get troubleshooting help in minutes.</p>
+            <a href="https://wa.me/918434029421" target="_blank" style="font-weight: 800; color: #16a34a; font-size: 0.95rem;">+91 84340 29421 →</a>
+          </div>
+        </div>
+
+        <div style="background: #ffffff; padding: 1.75rem; border-radius: var(--radius-lg); border: 1px solid var(--color-border); box-shadow: var(--shadow-sm); display: flex; align-items: flex-start; gap: 1.25rem;">
+          <div style="width: 48px; height: 48px; border-radius: 12px; background: #e0f2fe; color: #0369a1; display: flex; align-items: center; justify-content: center; font-size: 1.5rem;">
+            📞
+          </div>
+          <div>
+            <h4 style="font-size: 1.1rem; font-weight: 800; color: #0f172a; margin-bottom: 0.25rem; font-family: var(--font-main);">Toll-Free Merchant Helpline</h4>
+            <p style="font-size: 0.88rem; color: #64748b; margin-bottom: 0.5rem;">Monday to Saturday: 9:00 AM to 8:00 PM IST</p>
+            <a href="tel:18001234567" style="font-weight: 800; color: #0284c7; font-size: 0.95rem;">1800-123-4567 (Toll-Free) →</a>
+          </div>
+        </div>
+
+        <div style="background: #ffffff; padding: 1.75rem; border-radius: var(--radius-lg); border: 1px solid var(--color-border); box-shadow: var(--shadow-sm); display: flex; align-items: flex-start; gap: 1.25rem;">
+          <div style="width: 48px; height: 48px; border-radius: 12px; background: #fef3c7; color: #92400e; display: flex; align-items: center; justify-content: center; font-size: 1.5rem;">
+            ✉️
+          </div>
+          <div>
+            <h4 style="font-size: 1.1rem; font-weight: 800; color: #0f172a; margin-bottom: 0.25rem; font-family: var(--font-main);">Official Email Support</h4>
+            <p style="font-size: 0.88rem; color: #64748b; margin-bottom: 0.5rem;">For enterprise partnerships, merchant billing, and technical queries.</p>
+            <a href="mailto:support@udharguru.in" style="font-weight: 800; color: #d97706; font-size: 0.95rem;">support@udharguru.in →</a>
+          </div>
+        </div>
+
+        <div style="background: #ffffff; padding: 1.75rem; border-radius: var(--radius-lg); border: 1px solid var(--color-border); box-shadow: var(--shadow-sm); display: flex; align-items: flex-start; gap: 1.25rem;">
+          <div style="width: 48px; height: 48px; border-radius: 12px; background: #ede9fe; color: #6d28d9; display: flex; align-items: center; justify-content: center; font-size: 1.5rem;">
+            🏢
+          </div>
+          <div>
+            <h4 style="font-size: 1.1rem; font-weight: 800; color: #0f172a; margin-bottom: 0.25rem; font-family: var(--font-main);">Headquarters</h4>
+            <p style="font-size: 0.88rem; color: #64748b;">UdharGuru Fintech Towers, Block B, Cyber Hub, New Delhi - 110001, India</p>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Big Download CTA with Animated Puggy -->
+  <section class="download-cta-section">
+    <div class="container">
+      <div class="download-cta-banner">
+        <div class="cta-text-side">
+          <div style="display:flex; align-items:center; gap:0.85rem; margin-bottom:1rem;">
+            <img src="assets/images/app_icon.png" style="width:54px; height:54px; border-radius:14px; box-shadow:0 6px 16px rgba(0,0,0,0.3);" alt="UdharGuru Icon">
+            <div>
+              <span style="font-size:0.82rem; font-weight:800; color:#fef08a; text-transform:uppercase; letter-spacing:0.06em;">Official App Release</span>
+              <h4 style="margin:0; font-size:1.15rem; color:#ffffff;">UdharGuru App</h4>
+            </div>
+          </div>
+          <h2 style="font-family: var(--font-main);">Helpdesk Puggy is Always Here for You!</h2>
+          <p>Download UdharGuru and place your store's bookkeeping in the safest and most capable hands.</p>
+
+          <div class="puggy-download-btn-container">
+            <img src="assets/images/puggy_button_mascot.png" class="puggy-mascot-transparent" alt="Cartoon Puggy Mascot">
+            <button class="btn-download-main trigger-download-modal">
+              <span class="download-icon">⬇</span>
+              <span>Download Free App</span>
+              <span class="btn-paw-panja">🐾</span>
+              <span class="paw-ripple"></span>
+            </button>
+          </div>
+        </div>
+
+        <div class="cta-puggy-visual">
+          <div class="cta-puggy-box">
+            <img src="assets/images/puggy_download_click.jpg" alt="Animated Puggy Mascot clicking download button">
+            <div class="cta-interactive-tag">
+              <span>🐾 Helpdesk Puggy clicked download!</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Download Modal -->
+  <div class="modal-backdrop" id="downloadModal">
+    <div class="modal-content-card">
+      <button class="modal-close-btn" aria-label="Close modal">✕</button>
+      <div class="modal-grid">
+        <div class="modal-puggy-side">
+          <img src="assets/images/puggy_download_click.jpg" class="modal-puggy-img" alt="Puggy Mascot clicking">
+          <h4 style="font-weight: 800; color: #92400e; font-size: 1.15rem;">Puggy is Ready!</h4>
+          <p style="font-size: 0.85rem; color: #b45309; margin-top: 0.25rem;">Download UdharGuru App for free and make your bookkeeping simple.</p>
+        </div>
+
+        <div class="modal-form-side">
+          <div style="display:flex; align-items:center; gap:0.75rem; margin-bottom:1rem;">
+            <img src="assets/images/app_icon.png" style="width:48px; height:48px; border-radius:12px; box-shadow:0 4px 10px rgba(0,0,0,0.15);" alt="UdharGuru App">
+            <div>
+              <h3 style="font-size: 1.35rem; font-weight: 800; color: #0f172a; margin:0; line-height:1.2;">UdharGuru App</h3>
+              <span style="font-size: 0.78rem; color: #ea580c; font-weight: 700;">★ 4.8 • 10,000+ Merchants</span>
+            </div>
+          </div>
+          <p style="font-size: 0.88rem; color: #64748b; margin-bottom: 1.25rem;">Get the official UdharGuru app directly on your phone or install from Google Play Store:</p>
+
+          <div style="display: flex; gap: 0.5rem; margin-bottom: 1rem;">
+            <input type="tel" id="appPhoneInput" class="form-input" placeholder="10-digit mobile number" maxlength="10">
+            <button id="btnSendAppLink" class="btn-download-main" style="padding: 0.6rem 1.2rem; white-space: nowrap; font-size: 0.88rem;">
+              <span>Send Link</span>
+            </button>
+          </div>
+
+          <!-- Google Play Store QR Scanner & Direct Link -->
+          <a href="https://play.google.com/store/apps/details?id=com.udharkhata.akhil" target="_blank" class="qr-container">
+            <div class="qr-box">
+              <img src="assets/images/playstore_qr.png" alt="Google Play Store QR Code">
+            </div>
+            <div style="flex: 1;">
+              <div style="display:flex; align-items:center; gap:0.35rem; margin-bottom:0.15rem;">
+                <span style="font-size:0.75rem; font-weight:800; color:#ea580c; text-transform:uppercase; letter-spacing:0.04em;">Official Google Play Link</span>
+              </div>
+              <h5 style="font-size: 0.95rem; font-weight: 800; color: #0f172a; margin: 0;">Scan or Tap to Open</h5>
+              <p style="font-size: 0.78rem; color: #64748b; margin: 0.15rem 0 0;">Instantly opens app page on Google Play Store →</p>
+            </div>
+          </a>
+
+          <div style="display: flex; gap: 0.75rem; margin-top: 0.5rem;">
+            <a href="https://play.google.com/store/apps/details?id=com.udharkhata.akhil" target="_blank" class="store-badge-card" style="flex:1; justify-content:center; padding:0.55rem;">
+              <span class="store-icon" style="font-size:1.2rem;">▶</span>
+              <span style="font-size:0.82rem; font-weight:700;">Google Play</span>
+            </a>
+            <a href="https://firebasestorage.googleapis.com/v0/b/udharkhata-9199b.firebasestorage.app/o/udharguru%2Fapp-arm64-v8a-release.apk?alt=media&token=521b6034-58a9-446d-8a49-490777621824" target="_blank" class="store-badge-card" style="flex:1; justify-content:center; padding:0.55rem; background: rgba(245, 158, 11, 0.08); border-color: rgba(245, 158, 11, 0.3);">
+              <span class="store-icon" style="font-size:1.2rem;">📥</span>
+              <span style="font-size:0.82rem; font-weight:700;">Direct APK</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <!-- Developed by Guruji Tech Point Showcase Card -->
+      <div class="developer-credit-card">
+        <div class="dev-credit-left">
+          <div class="dev-badge-avatar">
+            <img src="assets/images/developer_badge.png" alt="Guruji Tech Point 3D Developer Avatar">
+          </div>
+          <div class="dev-credit-info">
+            <h4>
+              <span>Crafted & Developed by Guruji Tech Point</span>
+              <span class="verified-tag">✓ Verified Engineering</span>
+            </h4>
+            <p>Architected with modern standards for extreme speed, bank-grade encryption, and seamless merchant user experience.</p>
+            <div class="dev-tech-tags">
+              <span class="dev-tech-tag">⚡ Full-Stack Web</span>
+              <span class="dev-tech-tag">📱 Android & iOS Apps</span>
+              <span class="dev-tech-tag">🔒 256-bit Security</span>
+              <span class="dev-tech-tag">🚀 FinTech Architecture</span>
+            </div>
+          </div>
+        </div>
+        <div class="dev-credit-right">
+          <a href="contact.html" class="dev-contact-btn">
+            <span>💻 Guruji Tech Point</span>
+            <span>→</span>
+          </a>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>© 2026 UdharGuru Technologies Pvt Ltd. Developed by <strong>Guruji Tech Point</strong>. All rights reserved.</div>
+        <div style="display:flex; gap:1.25rem; flex-wrap:wrap; margin-top:0.5rem;">
+          <a href="index.html" style="color:#94a3b8;">Home</a>
+          <a href="security.html" style="color:#94a3b8;">Security</a>
+          <a href="privacy.html" style="color:#94a3b8;">Privacy Policy</a>
+          <a href="terms.html" style="color:#94a3b8;">Terms</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
