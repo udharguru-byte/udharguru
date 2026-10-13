@@ -2,7 +2,61 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=3.0, user-scalable=yes">
+  <script>
+    (function() {
+      function autoFitDesktopLayout() {
+        var targetWidth = 1240;
+        var currentWidth = window.innerWidth || document.documentElement.clientWidth;
+        if (!currentWidth || currentWidth <= 0) return;
+
+        if (currentWidth < targetWidth) {
+          var scale = currentWidth / targetWidth;
+          if (document.body) {
+            document.body.style.width = targetWidth + 'px';
+            document.body.style.minWidth = targetWidth + 'px';
+            document.body.style.maxWidth = targetWidth + 'px';
+            document.body.style.margin = '0';
+            document.body.style.overflowX = 'hidden';
+
+            if ('zoom' in document.body.style) {
+              document.body.style.zoom = scale;
+              document.body.style.transform = '';
+              document.body.style.transformOrigin = '';
+            } else {
+              document.body.style.transform = 'scale(' + scale + ')';
+              document.body.style.transformOrigin = 'top left';
+              document.body.style.height = (document.body.scrollHeight * scale) + 'px';
+            }
+          }
+          document.documentElement.style.overflowX = 'hidden';
+        } else {
+          if (document.body) {
+            document.body.style.zoom = '1';
+            document.body.style.transform = '';
+            document.body.style.transformOrigin = '';
+            document.body.style.width = '100%';
+            document.body.style.minWidth = targetWidth + 'px';
+            document.body.style.maxWidth = 'none';
+            document.body.style.margin = '0 auto';
+            document.body.style.overflowX = 'hidden';
+          }
+          document.documentElement.style.overflowX = 'hidden';
+        }
+      }
+
+      if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', autoFitDesktopLayout);
+      } else {
+        autoFitDesktopLayout();
+      }
+
+      window.addEventListener('resize', autoFitDesktopLayout);
+      window.addEventListener('orientationchange', function() {
+        setTimeout(autoFitDesktopLayout, 100);
+      });
+    })();
+  </script>
   <title>Features - Digital Ledger, Khata Book & Interest Engine | UdharGuru</title>
   <meta name="description" content="Explore top features of UdharGuru: 100% Offline Digital Bahi Khata, Automated Simple & Compound Interest Calculator, Free WhatsApp Payment Reminders, PDF Statements, and Auto Backup. Free for Android.">
   <meta name="keywords" content="digital ledger features, khata book app features, offline bahi khata, automatic byaj calculator, whatsapp payment reminder app, customer credit ledger, party statement pdf, dukandar khata book, vyapar hisab kitab, free billing app, tally mobile alternative, डिजिटल खाता फीचर्स, बही खाता ऐप">

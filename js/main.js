@@ -6,7 +6,62 @@
  * - Comprehensive Interest (Byaj) Calculator (Simple & Compound)
  * - Download Modal & SMS/WhatsApp link sender
  * - Mobile Navigation & Toast Notifications
+ * - Desktop Layout Auto-Fit on Mobile Devices (Auto Adjust)
  */
+
+// Auto Scale Desktop Layout to Fit Small Screens (Text & Images scale down proportionately)
+(function autoFitDesktopLayout() {
+  function fit() {
+    const targetWidth = 1240;
+    const currentWidth = window.innerWidth || document.documentElement.clientWidth;
+    if (!currentWidth || currentWidth <= 0) return;
+
+    if (currentWidth < targetWidth) {
+      const scale = currentWidth / targetWidth;
+      if (document.body) {
+        document.body.style.width = targetWidth + 'px';
+        document.body.style.minWidth = targetWidth + 'px';
+        document.body.style.maxWidth = targetWidth + 'px';
+        document.body.style.margin = '0';
+        document.body.style.overflowX = 'hidden';
+
+        if ('zoom' in document.body.style) {
+          document.body.style.zoom = scale;
+          document.body.style.transform = '';
+          document.body.style.transformOrigin = '';
+        } else {
+          document.body.style.transform = 'scale(' + scale + ')';
+          document.body.style.transformOrigin = 'top left';
+          document.body.style.height = (document.body.scrollHeight * scale) + 'px';
+        }
+      }
+      document.documentElement.style.overflowX = 'hidden';
+    } else {
+      if (document.body) {
+        document.body.style.zoom = '1';
+        document.body.style.transform = '';
+        document.body.style.transformOrigin = '';
+        document.body.style.width = '100%';
+        document.body.style.minWidth = targetWidth + 'px';
+        document.body.style.maxWidth = 'none';
+        document.body.style.margin = '0 auto';
+        document.body.style.overflowX = 'hidden';
+      }
+      document.documentElement.style.overflowX = 'hidden';
+    }
+  }
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', fit);
+  } else {
+    fit();
+  }
+
+  window.addEventListener('resize', fit);
+  window.addEventListener('orientationchange', () => {
+    setTimeout(fit, 100);
+  });
+})();
 
 // Sound FX generator using Web Audio API
 class SoundEffects {
