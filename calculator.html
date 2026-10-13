@@ -2,58 +2,52 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=3.0, user-scalable=yes">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
   <script>
     (function() {
-      function autoFitDesktopLayout() {
-        var targetWidth = 1240;
-        var currentWidth = window.innerWidth || document.documentElement.clientWidth;
-        if (!currentWidth || currentWidth <= 0) return;
-
-        if (currentWidth < targetWidth) {
-          var scale = currentWidth / targetWidth;
+      var tw = 1240;
+      function scaleToFit() {
+        var cw = window.innerWidth || document.documentElement.clientWidth || (window.screen ? window.screen.width : 0);
+        if (!cw || cw <= 0) return;
+        if (cw < tw) {
+          var sc = cw / tw;
           if (document.body) {
-            document.body.style.width = targetWidth + 'px';
-            document.body.style.minWidth = targetWidth + 'px';
-            document.body.style.maxWidth = targetWidth + 'px';
+            document.body.style.width = tw + 'px';
+            document.body.style.minWidth = tw + 'px';
+            document.body.style.maxWidth = tw + 'px';
             document.body.style.margin = '0';
-            document.body.style.overflowX = 'hidden';
-
             if ('zoom' in document.body.style) {
-              document.body.style.zoom = scale;
+              document.body.style.zoom = sc;
               document.body.style.transform = '';
-              document.body.style.transformOrigin = '';
             } else {
-              document.body.style.transform = 'scale(' + scale + ')';
+              document.body.style.transform = 'scale(' + sc + ')';
               document.body.style.transformOrigin = 'top left';
-              document.body.style.height = (document.body.scrollHeight * scale) + 'px';
             }
           }
           document.documentElement.style.overflowX = 'hidden';
+          document.documentElement.style.width = '100%';
         } else {
           if (document.body) {
             document.body.style.zoom = '1';
             document.body.style.transform = '';
-            document.body.style.transformOrigin = '';
             document.body.style.width = '100%';
-            document.body.style.minWidth = targetWidth + 'px';
+            document.body.style.minWidth = tw + 'px';
             document.body.style.maxWidth = 'none';
             document.body.style.margin = '0 auto';
-            document.body.style.overflowX = 'hidden';
           }
           document.documentElement.style.overflowX = 'hidden';
         }
       }
-
       if (document.readyState === 'loading') {
-        document.addEventListener('DOMContentLoaded', autoFitDesktopLayout);
+        document.addEventListener('DOMContentLoaded', scaleToFit);
       } else {
-        autoFitDesktopLayout();
+        scaleToFit();
       }
-
-      window.addEventListener('resize', autoFitDesktopLayout);
+      window.addEventListener('load', scaleToFit);
+      window.addEventListener('resize', scaleToFit);
       window.addEventListener('orientationchange', function() {
-        setTimeout(autoFitDesktopLayout, 100);
+        setTimeout(scaleToFit, 80);
+        setTimeout(scaleToFit, 300);
       });
     })();
   </script>
@@ -66,7 +60,7 @@
   <meta property="og:title" content="Byaj Calculator & Interest Engine - UdharGuru Digital Ledger">
   <meta property="og:description" content="Fast, automated Simple and Compound interest calculations for shopkeepers & merchants. 100% Free.">
   <meta property="og:image" content="assets/images/app_icon.png">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.css?v=20261013_v4">
   <link rel="icon" type="image/png" href="assets/images/app_icon.png">
   <meta name="theme-color" content="#F59E0B">
 </head>
@@ -138,7 +132,7 @@
           </div>
 
           <!-- Direct Store Buttons Row -->
-          <div style="display: flex; gap: 0.85rem; flex-wrap: wrap;">
+          <div style="display: flex; gap: 0.85rem; flex-wrap: nowrap;">
             <a href="https://play.google.com/store/apps/details?id=com.udharkhata.akhil" target="_blank" class="store-badge-card" style="padding: 0.6rem 1.25rem;">
               <span class="store-icon" style="font-size: 1.35rem;">▶</span>
               <div class="store-text-group">
@@ -340,6 +334,6 @@
     </div>
   </footer>
 
-  <script src="js/main.js"></script>
+  <script src="js/main.js?v=20261013_v4"></script>
 </body>
 </html>

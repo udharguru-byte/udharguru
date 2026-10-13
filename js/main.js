@@ -9,26 +9,24 @@
  * - Desktop Layout Auto-Fit on Mobile Devices (Auto Adjust)
  */
 
-// Auto Scale Desktop Layout to Fit Small Screens (Text & Images scale down proportionately)
+// Auto Scale Desktop Layout to Fit Small Screens (Unified Proportionate Scaling for Mobile & Desktop)
 (function autoFitDesktopLayout() {
+  var targetWidth = 1240;
+
   function fit() {
-    const targetWidth = 1240;
-    const currentWidth = window.innerWidth || document.documentElement.clientWidth;
+    var currentWidth = window.innerWidth || document.documentElement.clientWidth || (window.screen ? window.screen.width : 0);
     if (!currentWidth || currentWidth <= 0) return;
 
     if (currentWidth < targetWidth) {
-      const scale = currentWidth / targetWidth;
+      var scale = currentWidth / targetWidth;
       if (document.body) {
         document.body.style.width = targetWidth + 'px';
         document.body.style.minWidth = targetWidth + 'px';
         document.body.style.maxWidth = targetWidth + 'px';
         document.body.style.margin = '0';
-        document.body.style.overflowX = 'hidden';
-
         if ('zoom' in document.body.style) {
           document.body.style.zoom = scale;
           document.body.style.transform = '';
-          document.body.style.transformOrigin = '';
         } else {
           document.body.style.transform = 'scale(' + scale + ')';
           document.body.style.transformOrigin = 'top left';
@@ -36,16 +34,15 @@
         }
       }
       document.documentElement.style.overflowX = 'hidden';
+      document.documentElement.style.width = '100%';
     } else {
       if (document.body) {
         document.body.style.zoom = '1';
         document.body.style.transform = '';
-        document.body.style.transformOrigin = '';
         document.body.style.width = '100%';
         document.body.style.minWidth = targetWidth + 'px';
         document.body.style.maxWidth = 'none';
         document.body.style.margin = '0 auto';
-        document.body.style.overflowX = 'hidden';
       }
       document.documentElement.style.overflowX = 'hidden';
     }
@@ -57,9 +54,11 @@
     fit();
   }
 
+  window.addEventListener('load', fit);
   window.addEventListener('resize', fit);
-  window.addEventListener('orientationchange', () => {
-    setTimeout(fit, 100);
+  window.addEventListener('orientationchange', function() {
+    setTimeout(fit, 80);
+    setTimeout(fit, 300);
   });
 })();
 

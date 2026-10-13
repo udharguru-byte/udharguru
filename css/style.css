@@ -87,7 +87,6 @@ html {
   scroll-behavior: smooth;
   font-size: 16px;
   width: 100%;
-  max-width: 100%;
   overflow-x: hidden;
   -webkit-text-size-adjust: 100% !important;
   -moz-text-size-adjust: 100% !important;
@@ -108,6 +107,11 @@ body {
   -webkit-text-size-adjust: 100% !important;
   -moz-text-size-adjust: 100% !important;
   text-size-adjust: 100% !important;
+}
+
+/* Ensure mobile text autosizer (Font Boosting) is completely disabled */
+body * {
+  max-height: 999999px;
 }
 
 h1, h2, h3, h4, .brand-title, .section-title, .hero-title {
@@ -353,6 +357,8 @@ button, input, select, textarea {
   box-shadow: 0 6px 22px var(--color-primary-glow), inset 0 1px 0 rgba(255, 255, 255, 0.35);
   transition: all var(--transition-bounce);
   overflow: visible;
+  white-space: nowrap;
+  flex-shrink: 0;
 }
 
 .btn-download-main:hover {
@@ -1104,7 +1110,7 @@ button, input, select, textarea {
   display: flex;
   align-items: center;
   gap: 1.25rem;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   margin-bottom: 1.75rem;
 }
 
@@ -1119,6 +1125,8 @@ button, input, select, textarea {
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
   font-weight: 700;
   transition: all var(--transition-fast);
+  white-space: nowrap;
+  flex-shrink: 0;
 }
 
 .store-badge-card:hover {
