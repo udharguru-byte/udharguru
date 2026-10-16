@@ -3,54 +3,6 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
-  <script>
-    (function() {
-      var tw = 1240;
-      function scaleToFit() {
-        var cw = window.innerWidth || document.documentElement.clientWidth || (window.screen ? window.screen.width : 0);
-        if (!cw || cw <= 0) return;
-        if (cw < tw) {
-          var sc = cw / tw;
-          if (document.body) {
-            document.body.style.width = tw + 'px';
-            document.body.style.minWidth = tw + 'px';
-            document.body.style.maxWidth = tw + 'px';
-            document.body.style.margin = '0';
-            if ('zoom' in document.body.style) {
-              document.body.style.zoom = sc;
-              document.body.style.transform = '';
-            } else {
-              document.body.style.transform = 'scale(' + sc + ')';
-              document.body.style.transformOrigin = 'top left';
-            }
-          }
-          document.documentElement.style.overflowX = 'hidden';
-          document.documentElement.style.width = '100%';
-        } else {
-          if (document.body) {
-            document.body.style.zoom = '1';
-            document.body.style.transform = '';
-            document.body.style.width = '100%';
-            document.body.style.minWidth = tw + 'px';
-            document.body.style.maxWidth = 'none';
-            document.body.style.margin = '0 auto';
-          }
-          document.documentElement.style.overflowX = 'hidden';
-        }
-      }
-      if (document.readyState === 'loading') {
-        document.addEventListener('DOMContentLoaded', scaleToFit);
-      } else {
-        scaleToFit();
-      }
-      window.addEventListener('load', scaleToFit);
-      window.addEventListener('resize', scaleToFit);
-      window.addEventListener('orientationchange', function() {
-        setTimeout(scaleToFit, 80);
-        setTimeout(scaleToFit, 300);
-      });
-    })();
-  </script>
   <title>About UdharGuru — India's Leading Digital Ledger & Khata Book</title>
   <meta name="description" content="Discover UdharGuru's vision of empowering 63+ Million Indian retail merchants with modern digital bahi khata, automated interest engine, and bank-grade privacy. Developed by Guruji Tech Point.">
   <meta name="keywords" content="about udharguru, digital ledger mission, guruji tech point app, indian khata book developer, bahi khata revolution, small business accounting India, kirana ledger app">
@@ -60,7 +12,8 @@
   <meta property="og:title" content="About UdharGuru — Digital Ledger & Bahi Khata">
   <meta property="og:description" content="Empowering Indian shopkeepers and MSMEs with modern digital bookkeeping.">
   <meta property="og:image" content="assets/images/app_icon.png">
-  <link rel="stylesheet" href="css/style.css?v=20261013_v4">
+  <link rel="stylesheet" href="css/style.css?v=20261016_v5">
+  <link rel="stylesheet" href="css/redesign.css?v=20261016_r1">
   <link rel="icon" type="image/png" href="assets/images/app_icon.png">
   <meta name="theme-color" content="#F59E0B">
 </head>
@@ -80,11 +33,12 @@
 
       <div class="nav-links">
         <a href="index.html" class="nav-link">Home</a>
-        <a href="index.html#about" class="nav-link">About UdharGuru</a>
+        <a href="features.html" class="nav-link">Features</a>
+        <a href="calculator.html" class="nav-link">Byaj Calculator</a>
+        <a href="pricing.html" class="nav-link">Pricing</a>
+        <a href="about.html" class="nav-link">About</a>
         <a href="security.html" class="nav-link">Security</a>
-        <a href="privacy.html" class="nav-link">Privacy</a>
-        <a href="terms.html" class="nav-link">Terms</a>
-        <a href="#download" class="nav-link">Download App</a>
+        <a href="contact.html" class="nav-link">Contact</a>
       </div>
 
       <div class="nav-actions">
@@ -410,6 +364,6 @@
     </div>
   </footer>
 
-  <script src="js/main.js?v=20261013_v4"></script>
+  <script src="js/main.js?v=20261016_v5"></script>
 </body>
 </html>

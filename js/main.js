@@ -9,59 +9,6 @@
  * - Desktop Layout Auto-Fit on Mobile Devices (Auto Adjust)
  */
 
-// Auto Scale Desktop Layout to Fit Small Screens (Unified Proportionate Scaling for Mobile & Desktop)
-(function autoFitDesktopLayout() {
-  var targetWidth = 1240;
-
-  function fit() {
-    var currentWidth = window.innerWidth || document.documentElement.clientWidth || (window.screen ? window.screen.width : 0);
-    if (!currentWidth || currentWidth <= 0) return;
-
-    if (currentWidth < targetWidth) {
-      var scale = currentWidth / targetWidth;
-      if (document.body) {
-        document.body.style.width = targetWidth + 'px';
-        document.body.style.minWidth = targetWidth + 'px';
-        document.body.style.maxWidth = targetWidth + 'px';
-        document.body.style.margin = '0';
-        if ('zoom' in document.body.style) {
-          document.body.style.zoom = scale;
-          document.body.style.transform = '';
-        } else {
-          document.body.style.transform = 'scale(' + scale + ')';
-          document.body.style.transformOrigin = 'top left';
-          document.body.style.height = (document.body.scrollHeight * scale) + 'px';
-        }
-      }
-      document.documentElement.style.overflowX = 'hidden';
-      document.documentElement.style.width = '100%';
-    } else {
-      if (document.body) {
-        document.body.style.zoom = '1';
-        document.body.style.transform = '';
-        document.body.style.width = '100%';
-        document.body.style.minWidth = targetWidth + 'px';
-        document.body.style.maxWidth = 'none';
-        document.body.style.margin = '0 auto';
-      }
-      document.documentElement.style.overflowX = 'hidden';
-    }
-  }
-
-  if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', fit);
-  } else {
-    fit();
-  }
-
-  window.addEventListener('load', fit);
-  window.addEventListener('resize', fit);
-  window.addEventListener('orientationchange', function() {
-    setTimeout(fit, 80);
-    setTimeout(fit, 300);
-  });
-})();
-
 // Sound FX generator using Web Audio API
 class SoundEffects {
   constructor() {

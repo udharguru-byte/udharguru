@@ -3,54 +3,6 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
-  <script>
-    (function() {
-      var tw = 1240;
-      function scaleToFit() {
-        var cw = window.innerWidth || document.documentElement.clientWidth || (window.screen ? window.screen.width : 0);
-        if (!cw || cw <= 0) return;
-        if (cw < tw) {
-          var sc = cw / tw;
-          if (document.body) {
-            document.body.style.width = tw + 'px';
-            document.body.style.minWidth = tw + 'px';
-            document.body.style.maxWidth = tw + 'px';
-            document.body.style.margin = '0';
-            if ('zoom' in document.body.style) {
-              document.body.style.zoom = sc;
-              document.body.style.transform = '';
-            } else {
-              document.body.style.transform = 'scale(' + sc + ')';
-              document.body.style.transformOrigin = 'top left';
-            }
-          }
-          document.documentElement.style.overflowX = 'hidden';
-          document.documentElement.style.width = '100%';
-        } else {
-          if (document.body) {
-            document.body.style.zoom = '1';
-            document.body.style.transform = '';
-            document.body.style.width = '100%';
-            document.body.style.minWidth = tw + 'px';
-            document.body.style.maxWidth = 'none';
-            document.body.style.margin = '0 auto';
-          }
-          document.documentElement.style.overflowX = 'hidden';
-        }
-      }
-      if (document.readyState === 'loading') {
-        document.addEventListener('DOMContentLoaded', scaleToFit);
-      } else {
-        scaleToFit();
-      }
-      window.addEventListener('load', scaleToFit);
-      window.addEventListener('resize', scaleToFit);
-      window.addEventListener('orientationchange', function() {
-        setTimeout(scaleToFit, 80);
-        setTimeout(scaleToFit, 300);
-      });
-    })();
-  </script>
   <title>Features - Digital Ledger, Khata Book & Interest Engine | UdharGuru</title>
   <meta name="description" content="Explore top features of UdharGuru: 100% Offline Digital Bahi Khata, Automated Simple & Compound Interest Calculator, Free WhatsApp Payment Reminders, PDF Statements, and Auto Backup. Free for Android.">
   <meta name="keywords" content="digital ledger features, khata book app features, offline bahi khata, automatic byaj calculator, whatsapp payment reminder app, customer credit ledger, party statement pdf, dukandar khata book, vyapar hisab kitab, free billing app, tally mobile alternative, डिजिटल खाता फीचर्स, बही खाता ऐप">
@@ -60,7 +12,8 @@
   <meta property="og:title" content="UdharGuru Features - Digital Ledger & Khata Book">
   <meta property="og:description" content="Full suite of ledger management, byaj calculation, and payment reminders for Indian shopkeepers.">
   <meta property="og:image" content="assets/images/app_icon.png">
-  <link rel="stylesheet" href="css/style.css?v=20261013_v4">
+  <link rel="stylesheet" href="css/style.css?v=20261016_v5">
+  <link rel="stylesheet" href="css/redesign.css?v=20261016_r1">
   <link rel="icon" type="image/png" href="assets/images/app_icon.png">
   <meta name="theme-color" content="#F59E0B">
 </head>
@@ -80,11 +33,12 @@
 
       <div class="nav-links">
         <a href="index.html" class="nav-link">Home</a>
-        <a href="index.html#about" class="nav-link">About UdharGuru</a>
+        <a href="features.html" class="nav-link">Features</a>
+        <a href="calculator.html" class="nav-link">Byaj Calculator</a>
+        <a href="pricing.html" class="nav-link">Pricing</a>
+        <a href="about.html" class="nav-link">About</a>
         <a href="security.html" class="nav-link">Security</a>
-        <a href="privacy.html" class="nav-link">Privacy</a>
-        <a href="terms.html" class="nav-link">Terms</a>
-        <a href="#download" class="nav-link">Download App</a>
+        <a href="contact.html" class="nav-link">Contact</a>
       </div>
 
       <div class="nav-actions">
@@ -416,6 +370,6 @@
     </div>
   </footer>
 
-  <script src="js/main.js?v=20261013_v4"></script>
+  <script src="js/main.js?v=20261016_v5"></script>
 </body>
 </html>
