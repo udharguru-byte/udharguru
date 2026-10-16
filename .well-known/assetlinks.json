@@ -1,11 +1,16 @@
-[{
-  "relation": ["delegate_permission/common.handle_all_urls"],
-  "target": {
-    "namespace": "android_app",
-    "package_name": "com.udharkhata.akhil",
-    "sha256_cert_fingerprints": [
-      "66:27:E3:A6:90:3E:31:B6:A8:2F:D9:B7:E6:83:AB:E5:70:B6:8E:AD:06:AC:F3:E7:5C:0C:92:79:67:53:21:2A",
-      "88:D6:F0:E7:6E:50:0D:D8:AE:78:18:49:BA:35:31:40:97:A9:DB:79:A3:1F:73:C6:2A:62:52:B9:69:84:AC:C3"
-    ]
+[
+  {
+    "relation": [
+      "delegate_permission/common.handle_all_urls",
+      "delegate_permission/common.get_login_creds"
+    ],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.udharkhata.akhil",
+      "sha256_cert_fingerprints": [
+        "66:27:E3:A6:90:3E:31:B6:A8:2F:D9:B7:E6:83:AB:E5:70:B6:8E:AD:06:AC:F3:E7:5C:0C:92:79:67:53:21:2A",
+        "88:D6:F0:E7:6E:50:0D:D8:AE:78:18:49:BA:35:31:40:97:A9:DB:79:A3:1F:73:C6:2A:62:52:B9:69:84:AC:C3"
+      ]
+    }
   }
-}]
+]
