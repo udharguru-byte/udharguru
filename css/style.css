@@ -1672,6 +1672,64 @@ button, input, select, textarea {
   margin-bottom: 1rem;
 }
 
+/* ==========================================================================
+   MASCOT-FREE ICON TILE FALLBACKS (replacing removed Puggy images)
+   ========================================================================== */
+.icon-visual-tile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  width: 100%;
+  min-height: 340px;
+  padding: 2rem 1.5rem;
+  text-align: center;
+}
+
+.icon-visual-tile .ivt-emoji {
+  font-size: 4.5rem;
+  line-height: 1;
+  filter: drop-shadow(0 8px 16px rgba(180, 83, 9, 0.22));
+}
+
+.icon-visual-tile .ivt-title {
+  font-family: var(--font-main);
+  font-weight: 800;
+  font-size: 1.2rem;
+  color: #92400e;
+  margin: 0;
+}
+
+.icon-visual-tile .ivt-sub {
+  font-size: 0.86rem;
+  color: #b45309;
+  margin: 0;
+  max-width: 280px;
+  line-height: 1.5;
+}
+
+/* CTA box context (dark download banner) */
+.cta-puggy-box .icon-visual-tile {
+  min-height: 280px;
+}
+.cta-puggy-box .icon-visual-tile .ivt-title {
+  color: #fef08a;
+}
+.cta-puggy-box .icon-visual-tile .ivt-sub {
+  color: #fde68a;
+}
+
+/* Modal side context keeps existing amber gradient background */
+.modal-puggy-side .ivt-emoji {
+  font-size: 4rem;
+  margin-bottom: 1rem;
+}
+@media (max-width: 768px) {
+  .icon-visual-tile { min-height: 260px; }
+  .icon-visual-tile .ivt-emoji { font-size: 3.5rem; }
+}
+
 .modal-form-side {
   padding: 2.25rem;
   display: flex;
