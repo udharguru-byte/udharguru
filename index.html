@@ -1,602 +1,1693 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
-  <title>UdharGuru - Free Digital Ledger App, Udhar Khata Book & Bahi Khata | Download Now</title>
-  <meta name="description" content="UdharGuru is India's #1 Free Digital Ledger & Udhar Khata Book App for shopkeepers & merchants. Manage customer credit debit, daily hisab kitab, byaj calculator, 100% offline ledger, and instant WhatsApp reminders. Download now!">
-  <meta name="keywords" content="digital ledger app, udhar khata book, bahi khata, vyapar khata, hisab kitab app, credit debit tracker, customer ledger, daily khata, byaj calculator, offline khata book, tally on mobile, dukandar khata book, ledger book app, digital khata, smart udhar book, account ledger, business ledger, shopkeeper ledger, party ledger, whatsapp payment reminder, ledger pdf report, simple interest calculator, compound interest calculator, उद्धार खाता, बही खाता, डिजिटल लेजर, हिसाब किताब, व्यापार खाता, ब्याज कैलकुलेटर, दुकानदार बहीखाता">
-  <meta name="author" content="Guruji Tech Point">
-  <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
-  <link rel="canonical" href="https://udharguru.com/">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=10.0, user-scalable=yes">
+    <meta name="description" content="UdharGuru v2.9.5 — India's smartest digital ledger, automatic interest (byaj) calculator, Bluetooth thermal POS billing, expense manager & stock tracking app for shopkeepers. Multi-Business Profiles, WhatsApp PDF Share, Offline Support. 100% Free.">
+    <meta name="keywords" content="udhar khata app, khata book, byaj calculator, interest ledger app, bill generator app, thermal printer billing, expense manager app, kharacha book, stock tracker, inventory app, digital bahi khata, multi business ledger, udhar app, business ledger, novapay">
+    <meta name="author" content="Guruji Tech Point">
+    <meta name="robots" content="index, follow">
+    <meta name="theme-color" content="#F59E0B">
 
-  <!-- Open Graph / Facebook -->
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="https://udharguru.com/">
-  <meta property="og:title" content="UdharGuru - India's #1 Free Digital Ledger & Khata Book App">
-  <meta property="og:description" content="Manage customer credit debit, automated byaj calculation, 100% offline mode, and instant WhatsApp reminders with UdharGuru. Download free now!">
-  <meta property="og:image" content="assets/images/app_icon.png">
-  <meta property="og:site_name" content="UdharGuru">
-  <meta property="og:locale" content="en_IN">
+    <!-- Open Graph / Facebook / WhatsApp -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://udharguru.in">
+    <meta property="og:title" content="UdharGuru v2.9.5 — Digital Ledger, Byaj Calculator, Bill & Expense App">
+    <meta property="og:description" content="Auto Interest Engine (Byaj), Bluetooth Thermal Receipt Printing, Shop Expense Manager, 1-Click WhatsApp PDF Share, Multi-Business Stores. 100% Free for all Indian Merchants.">
+    <meta property="og:image" content="https://i.ibb.co/844cYyhf/Chat-GPT-Image-Jul-26-2026-06-46-25-AM.png">
 
-  <!-- Twitter Card -->
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="UdharGuru - Digital Ledger, Khata Book & Bahi Khata">
-  <meta name="twitter:description" content="India's smartest digital ledger app for shopkeepers & merchants. 100% free forever, offline & secure.">
-  <meta name="twitter:image" content="assets/images/app_icon.png">
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="UdharGuru v2.9.5 — India's Complete Business Manager App">
+    <meta name="twitter:description" content="Digital Khata, Simple & Compound Interest Calculator, Thermal Bill Printing, Expense Tracking. 100% Free.">
+    <meta name="twitter:image" content="https://i.ibb.co/844cYyhf/Chat-GPT-Image-Jul-26-2026-06-46-25-AM.png">
 
-  <!-- Schema.org JSON-LD Structured Data for Software Application -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "SoftwareApplication",
-    "name": "UdharGuru - Digital Ledger App",
-    "operatingSystem": "Android",
-    "applicationCategory": "BusinessApplication, FinanceApplication",
-    "offers": {
-      "@type": "Offer",
-      "price": "0",
-      "priceCurrency": "INR"
-    },
-    "aggregateRating": {
-      "@type": "AggregateRating",
-      "ratingValue": "4.9",
-      "ratingCount": "1250"
-    },
-    "author": {
-      "@type": "Organization",
-      "name": "Guruji Tech Point"
-    },
-    "description": "UdharGuru is a fast, 100% free digital ledger, bahi khata, and udhar khata book app with automated interest calculation, offline capabilities, and instant PDF statement generation.",
-    "keywords": "digital ledger app, udhar khata book, bahi khata, vyapar khata, hisab kitab, byaj calculator, credit debit tracker, offline ledger"
-  }
-  </script>
+    <title>UdharGuru v2.9.5 — Digital Ledger, Interest (Byaj) Calculator, Bill & Expense Manager | Free Download</title>
 
-  <link rel="stylesheet" href="css/style.css?v=20261016_v5">
-  <link rel="stylesheet" href="css/redesign.css?v=20261016_r1">
-  <link rel="icon" type="image/png" href="assets/images/app_icon.png">
-  <meta name="theme-color" content="#F59E0B">
+    <link rel="icon" type="image/png" href="https://i.postimg.cc/sXmvm5np/app-icon.png">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800;900&family=Outfit:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@400;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <style>
+        /* ── THEME DESIGN SYSTEM (LIGHT & DARK DYNAMIC) ── */
+        :root {
+            /* Brand Core Colors */
+            --primary: #F59E0B;
+            --primary-hover: #D97706;
+            --primary-dark: #B45309;
+            --primary-light: #FDE68A;
+            --primary-glow: rgba(245, 158, 11, 0.28);
+            --primary-soft: rgba(245, 158, 11, 0.10);
+
+            /* Financial Accents */
+            --success: #10B981;
+            --success-glow: rgba(16, 185, 129, 0.25);
+            --success-soft: rgba(16, 185, 129, 0.10);
+            
+            --danger: #EF4444;
+            --danger-glow: rgba(239, 68, 68, 0.25);
+            --danger-soft: rgba(239, 68, 68, 0.10);
+
+            --info: #3B82F6;
+            --info-glow: rgba(59, 130, 246, 0.25);
+            --info-soft: rgba(59, 130, 246, 0.10);
+
+            --accent-purple: #8B5CF6;
+            --accent-purple-soft: rgba(139, 92, 246, 0.10);
+
+            /* Light Mode Tokens (Default) */
+            --bg-base: #FFFFFF;
+            --bg-subtle: #F8FAFC;
+            --bg-card: #FFFFFF;
+            --bg-card-hover: #FFFDF9;
+            --header-bg: rgba(255, 255, 255, 0.88);
+            
+            --border: #E2E8F0;
+            --border-hover: #CBD5E1;
+            
+            --text-heading: #0F172A;
+            --text-body: #334155;
+            --text-muted: #64748B;
+            --text-dim: #94A3B8;
+
+            --shadow-sm: 0 2px 10px rgba(15, 23, 42, 0.04);
+            --shadow-md: 0 10px 30px rgba(15, 23, 42, 0.07);
+            --shadow-lg: 0 20px 48px rgba(245, 158, 11, 0.14);
+
+            --code-bg: #0F172A;
+            --code-text: #FDE68A;
+
+            --transition: all 0.28s cubic-bezier(0.4, 0, 0.2, 1);
+            --radius-sm: 10px;
+            --radius-md: 16px;
+            --radius-lg: 24px;
+            --radius-xl: 32px;
+        }
+
+        /* ── DARK THEME TOKENS ── */
+        [data-theme="dark"] {
+            --bg-base: #0A0E17;
+            --bg-subtle: #111827;
+            --bg-card: #182234;
+            --bg-card-hover: #1F2B42;
+            --header-bg: rgba(17, 24, 39, 0.85);
+
+            --border: rgba(255, 255, 255, 0.09);
+            --border-hover: rgba(255, 255, 255, 0.20);
+
+            --text-heading: #F8FAFC;
+            --text-body: #CBD5E1;
+            --text-muted: #94A3B8;
+            --text-dim: #64748B;
+
+            --shadow-sm: 0 4px 16px rgba(0, 0, 0, 0.45);
+            --shadow-md: 0 12px 36px rgba(0, 0, 0, 0.55);
+            --shadow-lg: 0 20px 48px rgba(0, 0, 0, 0.70);
+
+            --code-bg: #030712;
+            --code-text: #FBBF24;
+        }
+
+        /* Global Reset */
+        * { margin: 0; padding: 0; box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
+        html { touch-action: manipulation; scroll-behavior: smooth; }
+        body {
+            font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+            background: var(--bg-base);
+            color: var(--text-body);
+            overflow-x: hidden;
+            line-height: 1.6;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+
+        h1, h2, h3, h4, .brand-title {
+            font-family: 'Outfit', sans-serif;
+        }
+
+        img { pointer-events: none; -webkit-user-drag: none; user-select: none; display: block; }
+        a { text-decoration: none; color: inherit; }
+
+        .container { max-width: 1180px; margin: 0 auto; padding: 0 24px; }
+
+        /* ── HEADER ── */
+        header {
+            position: sticky; top: 0; z-index: 1000;
+            background: var(--header-bg);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            border-bottom: 1px solid var(--border);
+            padding: 12px 0;
+            transition: var(--transition);
+        }
+        .header-content { display: flex; justify-content: space-between; align-items: center; }
+        .logo { display: flex; align-items: center; gap: 12px; cursor: pointer; }
+        .logo-icon-wrap {
+            width: 40px; height: 40px; border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 4px 14px var(--primary-glow);
+        }
+        .logo-icon-wrap img {
+            width: 100%; height: 100%; object-fit: cover; display: block;
+        }
+        .logo-text { display: flex; align-items: baseline; gap: 8px; }
+        .logo span.brand-title {
+            font-size: 22px; font-weight: 800;
+            background: linear-gradient(135deg, #F59E0B 0%, #EA580C 100%);
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            letter-spacing: -0.5px;
+        }
+        .logo-version {
+            font-size: 11px; font-weight: 800;
+            background: var(--primary-soft); color: var(--primary-hover);
+            padding: 3px 8px; border-radius: 8px;
+            border: 1px solid var(--primary-glow);
+            letter-spacing: 0.3px;
+        }
+        
+        nav { display: flex; align-items: center; gap: 28px; }
+        nav ul { list-style: none; display: flex; gap: 22px; align-items: center; }
+        nav a {
+            color: var(--text-muted); font-size: 14px; font-weight: 600;
+            transition: var(--transition); position: relative; padding: 4px 0;
+        }
+        nav a:hover, nav a.active { color: var(--primary); }
+        nav a.active::after {
+            content: ''; position: absolute; bottom: -2px; left: 0; right: 0;
+            height: 2px; background: var(--primary); border-radius: 2px;
+        }
+
+        .header-actions { display: flex; align-items: center; gap: 12px; }
+
+        .theme-btn-header {
+            width: 38px; height: 38px; border-radius: 10px;
+            background: var(--bg-subtle); border: 1px solid var(--border);
+            color: var(--text-heading); display: flex; align-items: center; justify-content: center;
+            cursor: pointer; transition: var(--transition); font-size: 16px;
+        }
+        .theme-btn-header:hover {
+            border-color: var(--primary); color: var(--primary);
+            transform: scale(1.05);
+        }
+
+        .mobile-menu-btn {
+            display: none; background: none; border: none;
+            color: var(--text-heading); font-size: 22px; cursor: pointer; padding: 6px;
+        }
+
+        /* ── HERO SECTION ── */
+        .hero {
+            min-height: 88vh;
+            display: flex; align-items: center;
+            background: radial-gradient(ellipse 80% 60% at 50% -10%, var(--primary-soft) 0%, var(--bg-base) 80%);
+            padding: 80px 0 60px;
+            position: relative; overflow: hidden;
+        }
+        .hero::after {
+            content: '';
+            position: absolute; inset: 0;
+            background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23F59E0B' fill-opacity='0.035'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+            pointer-events: none;
+        }
+        .hero-content { display: flex; align-items: center; gap: 56px; position: relative; z-index: 1; }
+        .hero-text { flex: 1.15; }
+        
+        .hero-badge {
+            display: inline-flex; align-items: center; gap: 8px;
+            background: var(--primary-soft); border: 1px solid var(--primary-glow);
+            color: var(--primary-hover); font-size: 13px; font-weight: 800;
+            padding: 7px 18px; border-radius: 100px; margin-bottom: 24px;
+            box-shadow: 0 4px 16px var(--primary-glow);
+            letter-spacing: 0.4px;
+        }
+        .hero-badge i { font-size: 13px; color: var(--primary); animation: spinSlow 6s linear infinite; }
+        @keyframes spinSlow { 100% { transform: rotate(360deg); } }
+
+        .hero h1 {
+            font-size: clamp(34px, 5.2vw, 56px); font-weight: 900;
+            line-height: 1.14; color: var(--text-heading);
+            letter-spacing: -1.4px; margin-bottom: 20px;
+        }
+        .hero h1 .accent {
+            background: linear-gradient(135deg, #F59E0B 0%, #EA580C 100%);
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .hero-sub {
+            font-size: clamp(15px, 2vw, 18px); color: var(--text-muted);
+            max-width: 540px; margin-bottom: 32px; line-height: 1.7;
+        }
+        
+        .hero-tags { display: flex; gap: 10px; flex-wrap: wrap; margin-bottom: 36px; }
+        .tag-pill {
+            display: inline-flex; align-items: center; gap: 7px;
+            font-size: 12.5px; font-weight: 700; padding: 6px 14px; border-radius: 10px;
+            background: var(--bg-card); border: 1px solid var(--border); color: var(--text-heading);
+            box-shadow: var(--shadow-sm); transition: var(--transition);
+        }
+        .tag-pill:hover { border-color: var(--primary); transform: translateY(-2px); }
+        .tag-pill i { color: var(--primary); font-size: 12px; }
+
+        .hero-actions { display: flex; align-items: center; gap: 14px; flex-wrap: wrap; }
+        
+        .btn {
+            display: inline-flex; align-items: center; gap: 10px;
+            font-weight: 800; font-size: 14.5px;
+            padding: 14px 26px; border-radius: 14px;
+            transition: var(--transition); cursor: pointer;
+            text-align: center; text-decoration: none;
+            border: none;
+        }
+        .btn-primary {
+            background: linear-gradient(135deg, #F59E0B 0%, #D97706 100%);
+            color: #FFFFFF !important;
+            box-shadow: 0 8px 26px var(--primary-glow);
+        }
+        .btn-primary:hover {
+            filter: brightness(1.08); transform: translateY(-2px);
+            box-shadow: 0 12px 34px var(--primary-glow);
+        }
+
+        .btn-apk {
+            background: linear-gradient(135deg, #10B981 0%, #059669 100%);
+            color: #FFFFFF !important;
+            box-shadow: 0 8px 26px var(--success-glow);
+        }
+        .btn-apk:hover {
+            filter: brightness(1.08); transform: translateY(-2px);
+            box-shadow: 0 12px 34px var(--success-glow);
+        }
+
+        .btn-ghost {
+            background: var(--bg-card);
+            border: 1.5px solid var(--border);
+            color: var(--text-heading) !important;
+            box-shadow: var(--shadow-sm);
+        }
+        .btn-ghost:hover {
+            border-color: var(--primary); color: var(--primary) !important;
+            background: var(--primary-soft); transform: translateY(-2px);
+        }
+
+        .hero-image { flex: 0.85; display: flex; justify-content: center; position: relative; }
+        .phone-frame-wrapper {
+            position: relative;
+            padding: 12px;
+            background: linear-gradient(135deg, rgba(245, 158, 11, 0.4), rgba(234, 88, 12, 0.1));
+            border-radius: 46px;
+            box-shadow: var(--shadow-lg);
+            animation: float 6s ease-in-out infinite;
+        }
+        .phone-frame {
+            width: min(290px, 64vw);
+            border-radius: 36px;
+            border: 3px solid rgba(255, 255, 255, 0.15);
+            object-fit: cover;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+        }
+        @keyframes float { 0%,100%{ transform: translateY(0); } 50%{ transform: translateY(-14px); } }
+
+        /* ── STATS SECTION ── */
+        .stats {
+            padding: 50px 0;
+            border-top: 1px solid var(--border);
+            border-bottom: 1px solid var(--border);
+            background: var(--bg-subtle);
+        }
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+            text-align: center;
+        }
+        .stat-card {
+            background: var(--bg-card);
+            padding: 24px 18px;
+            border-radius: var(--radius-md);
+            border: 1px solid var(--border);
+            box-shadow: var(--shadow-sm);
+            transition: var(--transition);
+        }
+        .stat-card:hover {
+            border-color: var(--primary);
+            transform: translateY(-4px);
+            box-shadow: var(--shadow-md);
+        }
+        .stat-card .stat-icon {
+            font-size: 24px; color: var(--primary); margin-bottom: 8px;
+        }
+        .stat-card h3 {
+            font-size: clamp(28px, 4vw, 42px);
+            font-weight: 900;
+            color: var(--text-heading);
+            letter-spacing: -1px;
+            line-height: 1.1;
+        }
+        .stat-card p {
+            font-size: 13px; color: var(--text-muted);
+            margin-top: 6px; font-weight: 700;
+            text-transform: uppercase; letter-spacing: 0.8px;
+        }
+
+        /* ── SECTION HEADINGS ── */
+        .section-header { text-align: center; margin-bottom: 54px; }
+        .section-label {
+            display: inline-flex; align-items: center; gap: 8px;
+            color: var(--primary-hover); font-size: 12px; font-weight: 800;
+            text-transform: uppercase; letter-spacing: 2px;
+            margin-bottom: 12px;
+            background: var(--primary-soft);
+            padding: 4px 14px;
+            border-radius: 100px;
+            border: 1px solid var(--primary-glow);
+        }
+        .section-title {
+            font-size: clamp(26px, 4.2vw, 40px); font-weight: 900;
+            color: var(--text-heading); letter-spacing: -1px; margin-bottom: 12px;
+        }
+        .section-sub {
+            font-size: 16px; color: var(--text-muted);
+            max-width: 620px; margin: 0 auto; line-height: 1.7;
+        }
+
+        /* ── INTERACTIVE BYAJ CALCULATOR DEMO WIDGET ── */
+        .calculator-section {
+            padding: 90px 0;
+            background: var(--bg-base);
+            border-bottom: 1px solid var(--border);
+        }
+        .calc-wrapper {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: var(--radius-lg);
+            padding: 36px;
+            box-shadow: var(--shadow-md);
+            max-width: 900px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 1.1fr 1fr;
+            gap: 36px;
+            align-items: center;
+        }
+        @media (max-width: 768px) {
+            .calc-wrapper { grid-template-columns: 1fr; padding: 24px; gap: 28px; }
+        }
+        .calc-form-group { margin-bottom: 18px; }
+        .calc-form-group label {
+            display: block; font-size: 13px; font-weight: 700;
+            color: var(--text-muted); margin-bottom: 8px; text-transform: uppercase; letter-spacing: 0.5px;
+        }
+        .calc-input-wrap {
+            position: relative;
+            display: flex; align-items: center;
+        }
+        .calc-input-wrap span.currency-prefix {
+            position: absolute; left: 14px; font-weight: 800; color: var(--text-dim);
+        }
+        .calc-input {
+            width: 100%; height: 46px;
+            background: var(--bg-subtle);
+            border: 1px solid var(--border);
+            border-radius: 10px;
+            padding: 0 14px 0 34px;
+            font-size: 15px; font-weight: 700;
+            color: var(--text-heading);
+            font-family: 'JetBrains Mono', monospace;
+            outline: none; transition: var(--transition);
+        }
+        .calc-input:focus { border-color: var(--primary); box-shadow: 0 0 0 3px var(--primary-soft); }
+        
+        .calc-type-toggle {
+            display: flex; gap: 10px; margin-bottom: 22px;
+        }
+        .calc-type-btn {
+            flex: 1; padding: 10px 12px; border-radius: 10px;
+            font-size: 13px; font-weight: 700; cursor: pointer;
+            background: var(--bg-subtle); border: 1.5px solid var(--border);
+            color: var(--text-muted); text-align: center; transition: var(--transition);
+        }
+        .calc-type-btn.active {
+            background: var(--primary-soft); border-color: var(--primary);
+            color: var(--primary-hover);
+        }
+
+        .calc-results-card {
+            background: var(--bg-subtle);
+            border: 1px solid var(--border);
+            border-radius: var(--radius-md);
+            padding: 28px 24px;
+            display: flex; flex-direction: column; gap: 16px;
+        }
+        .calc-res-row {
+            display: flex; justify-content: space-between; align-items: center;
+            font-size: 14px;
+        }
+        .calc-res-row .label { color: var(--text-muted); font-weight: 600; }
+        .calc-res-row .val {
+            font-family: 'JetBrains Mono', monospace;
+            font-weight: 800; font-size: 16px; color: var(--text-heading);
+        }
+        .calc-total-box {
+            margin-top: 10px; padding-top: 16px;
+            border-top: 2px dashed var(--border);
+            display: flex; justify-content: space-between; align-items: center;
+        }
+        .calc-total-box .total-label {
+            font-size: 15px; font-weight: 800; color: var(--text-heading);
+        }
+        .calc-total-box .total-val {
+            font-family: 'Outfit', sans-serif;
+            font-size: 26px; font-weight: 900; color: var(--success);
+        }
+
+        /* ── FEATURES GRID ── */
+        .features { padding: 100px 0; background: var(--bg-subtle); }
+        .features-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 22px; }
+        @media (max-width: 1024px) { .features-grid { grid-template-columns: repeat(2, 1fr); } }
+        @media (max-width: 640px) { .features-grid { grid-template-columns: 1fr; } }
+        
+        .feature-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: var(--radius-lg); padding: 30px;
+            transition: var(--transition); position: relative; overflow: hidden;
+            display: flex; flex-direction: column; justify-content: space-between;
+            box-shadow: var(--shadow-sm);
+        }
+        .feature-card::before {
+            content: ''; position: absolute; top: 0; left: 0; right: 0; height: 3px;
+            background: linear-gradient(90deg, #F59E0B, #EA580C);
+            opacity: 0; transition: var(--transition);
+        }
+        .feature-card:hover {
+            border-color: var(--primary); transform: translateY(-5px);
+            background: var(--bg-card-hover); box-shadow: var(--shadow-lg);
+        }
+        .feature-card:hover::before { opacity: 1; }
+
+        .feature-icon {
+            width: 54px; height: 54px; border-radius: 16px;
+            background: var(--primary-soft); border: 1px solid var(--primary-glow);
+            display: flex; align-items: center; justify-content: center;
+            font-size: 24px; color: var(--primary-hover); margin-bottom: 20px;
+        }
+        .feature-icon.red { background: var(--danger-soft); border-color: var(--danger-glow); color: var(--danger); }
+        .feature-icon.blue { background: var(--info-soft); border-color: var(--info-glow); color: var(--info); }
+        .feature-icon.green { background: var(--success-soft); border-color: var(--success-glow); color: var(--success); }
+        .feature-icon.purple { background: var(--accent-purple-soft); border-color: rgba(139, 92, 246, 0.25); color: var(--accent-purple); }
+
+        .feature-card h3 { font-size: 18px; font-weight: 800; color: var(--text-heading); margin-bottom: 10px; }
+        .feature-card p { font-size: 14px; color: var(--text-body); line-height: 1.65; }
+        .feature-tag {
+            margin-top: 20px; display: inline-flex; align-items: center; gap: 6px;
+            font-size: 11.5px; font-weight: 800; text-transform: uppercase; letter-spacing: 0.8px;
+            color: var(--primary-hover);
+        }
+
+        /* ── SCREENSHOTS SHOWCASE CAROUSEL ── */
+        .screenshots { padding: 100px 0; background: var(--bg-base); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); }
+        .screenshots-carousel-wrap {
+            position: relative; margin-top: 20px;
+        }
+        .screenshots-scroll {
+            display: flex; gap: 20px; overflow-x: auto;
+            scroll-snap-type: x mandatory; padding: 14px 6px 30px;
+            scrollbar-width: none;
+            scroll-behavior: smooth;
+        }
+        .screenshots-scroll::-webkit-scrollbar { display: none; }
+        
+        .screenshot-item {
+            flex: 0 0 auto; width: 220px;
+            scroll-snap-align: center;
+            border-radius: 26px; overflow: hidden;
+            border: 1px solid var(--border);
+            box-shadow: var(--shadow-md);
+            transition: var(--transition);
+            background: var(--bg-card);
+            cursor: pointer;
+            position: relative;
+        }
+        .screenshot-item:hover {
+            transform: scale(1.04) translateY(-4px);
+            box-shadow: var(--shadow-lg);
+            border-color: var(--primary);
+        }
+        .screenshot-item img {
+            width: 100%; height: auto; display: block; object-fit: cover;
+        }
+        .screenshot-caption {
+            padding: 12px; text-align: center; font-size: 13.5px;
+            font-weight: 800; color: var(--text-heading);
+            background: var(--bg-card); border-top: 1px solid var(--border);
+        }
+        .screenshot-hover-overlay {
+            position: absolute; inset: 0; background: rgba(0, 0, 0, 0.45);
+            display: flex; align-items: center; justify-content: center;
+            color: white; font-weight: 800; font-size: 13px;
+            opacity: 0; transition: var(--transition);
+            backdrop-filter: blur(2px);
+        }
+        .screenshot-item:hover .screenshot-hover-overlay { opacity: 1; }
+
+        .carousel-nav-btn {
+            position: absolute; top: 48%; transform: translateY(-50%);
+            width: 44px; height: 44px; border-radius: 50%;
+            background: var(--bg-card); border: 1px solid var(--border);
+            color: var(--text-heading); box-shadow: var(--shadow-md);
+            display: flex; align-items: center; justify-content: center;
+            cursor: pointer; z-index: 10; transition: var(--transition);
+        }
+        .carousel-nav-btn:hover {
+            background: var(--primary); color: white; border-color: var(--primary);
+        }
+        .carousel-prev { left: -22px; }
+        .carousel-next { right: -22px; }
+
+        /* ── DEVELOPER / ABOUT FOUNDER ── */
+        .developer { padding: 90px 0; background: var(--bg-subtle); }
+        .dev-card {
+            background: var(--bg-card); border: 1px solid var(--border);
+            border-radius: var(--radius-xl); padding: 48px;
+            display: flex; align-items: center; gap: 36px;
+            position: relative; overflow: hidden;
+            box-shadow: var(--shadow-md);
+            max-width: 980px; margin: 0 auto;
+        }
+        .dev-card::before {
+            content: ''; position: absolute;
+            top: -60px; right: -60px; width: 240px; height: 240px;
+            background: radial-gradient(circle, var(--primary-glow) 0%, transparent 70%);
+            pointer-events: none;
+        }
+        .dev-avatar-box {
+            width: 90px; height: 90px; border-radius: 24px;
+            background: linear-gradient(135deg, #F59E0B, #EA580C);
+            display: flex; align-items: center; justify-content: center;
+            color: white; font-size: 38px; font-weight: 900;
+            box-shadow: 0 10px 24px var(--primary-glow);
+            flex-shrink: 0;
+            font-family: 'Outfit', sans-serif;
+        }
+        .dev-info h2 { font-size: 28px; font-weight: 800; color: var(--text-heading); margin-bottom: 4px; }
+        .dev-role {
+            font-size: 13px; color: var(--primary-hover); font-weight: 800;
+            margin-bottom: 16px; text-transform: uppercase; letter-spacing: 1.5px;
+        }
+        .dev-info p { font-size: 15px; color: var(--text-body); line-height: 1.8; max-width: 640px; }
+        .dev-links { display: flex; gap: 12px; margin-top: 24px; flex-wrap: wrap; }
+        .dev-link {
+            display: inline-flex; align-items: center; gap: 8px;
+            padding: 10px 20px; border-radius: 12px;
+            border: 1px solid var(--border); color: var(--text-heading);
+            font-size: 13.5px; font-weight: 700; transition: var(--transition);
+            background: var(--bg-card); box-shadow: var(--shadow-sm);
+        }
+        .dev-link:hover {
+            color: var(--primary); border-color: var(--primary);
+            background: var(--primary-soft); transform: translateY(-2px);
+        }
+
+        /* ── CTA SECTION ── */
+        .cta-section {
+            padding: 90px 0; text-align: center;
+            background: radial-gradient(ellipse 70% 80% at 50% 50%, var(--primary-soft) 0%, var(--bg-base) 80%);
+            border-top: 1px solid var(--border);
+        }
+        .cta-section h2 {
+            font-size: clamp(28px, 4.5vw, 44px); font-weight: 900;
+            color: var(--text-heading); margin-bottom: 14px; letter-spacing: -1px;
+        }
+        .cta-section p { font-size: 17px; color: var(--text-muted); margin-bottom: 36px; max-width: 580px; margin-left: auto; margin-right: auto; }
+
+        /* ── FOOTER ── */
+        footer { padding: 60px 0 36px; border-top: 1px solid var(--border); background: var(--bg-subtle); }
+        .footer-content {
+            display: flex; justify-content: space-between; align-items: flex-start;
+            gap: 40px; flex-wrap: wrap; margin-bottom: 40px;
+        }
+        .footer-brand .logo { margin-bottom: 14px; }
+        .footer-brand p { font-size: 13.5px; color: var(--text-muted); max-width: 340px; line-height: 1.7; }
+        .footer-col h4 {
+            font-size: 13px; font-weight: 800; color: var(--text-heading);
+            text-transform: uppercase; letter-spacing: 1px; margin-bottom: 18px;
+        }
+        .footer-col ul { list-style: none; }
+        .footer-col li { margin-bottom: 12px; }
+        .footer-col a {
+            font-size: 14px; color: var(--text-muted); transition: var(--transition); font-weight: 600;
+        }
+        .footer-col a:hover { color: var(--primary); }
+        .footer-bottom {
+            padding-top: 28px; border-top: 1px solid var(--border);
+            display: flex; justify-content: space-between; align-items: center;
+            flex-wrap: wrap; gap: 12px; font-size: 13px; color: var(--text-muted);
+        }
+
+        /* ── SECTION PAGES (About, Privacy, Terms, Security) ── */
+        .section-page {
+            display: none; max-width: 880px; margin: 0 auto;
+            padding: 60px 24px 90px; background: var(--bg-base);
+        }
+        .section-page.active { display: block; animation: fadeUp 0.35s ease; }
+        @keyframes fadeUp { from { opacity:0; transform: translateY(18px); } to { opacity:1; transform: translateY(0); } }
+
+        .back-nav-btn {
+            display: inline-flex; align-items: center; gap: 8px;
+            font-size: 13px; font-weight: 700; color: var(--primary);
+            margin-bottom: 24px; cursor: pointer; padding: 6px 12px;
+            border-radius: 8px; background: var(--primary-soft);
+            border: 1px solid var(--primary-glow);
+            transition: var(--transition);
+        }
+        .back-nav-btn:hover { transform: translateX(-3px); }
+
+        .section-page h1 { font-size: clamp(28px, 5vw, 40px); font-weight: 900; color: var(--text-heading); margin-bottom: 8px; }
+        .page-date {
+            font-size: 13px; color: var(--text-muted); margin-bottom: 30px;
+            display: inline-block; background: var(--bg-subtle); padding: 5px 14px;
+            border-radius: 8px; border: 1px solid var(--border); font-weight: 700;
+        }
+        .section-page h2 {
+            font-size: 21px; font-weight: 800; color: var(--text-heading);
+            margin: 36px 0 14px; display: flex; align-items: center; gap: 10px;
+        }
+        .section-page h2 i { color: var(--primary); font-size: 18px; }
+        .section-page h3 { font-size: 16.5px; font-weight: 800; color: var(--primary-hover); margin: 24px 0 8px; }
+        .section-page p { font-size: 15px; color: var(--text-body); line-height: 1.8; margin-bottom: 14px; }
+        .section-page ul { margin: 0 0 16px 20px; }
+        .section-page li { font-size: 15px; color: var(--text-body); line-height: 1.8; margin-bottom: 8px; }
+        
+        .highlight-box {
+            background: var(--primary-soft); border: 1px solid var(--primary-glow);
+            border-radius: var(--radius-md); padding: 22px 26px; margin: 24px 0;
+        }
+        .highlight-box p { margin: 0; color: var(--text-heading); font-weight: 600; }
+        .info-box {
+            background: var(--bg-subtle); border: 1px solid var(--border);
+            border-radius: var(--radius-md); padding: 22px 26px; margin: 18px 0;
+        }
+        .info-box p, .info-box li { color: var(--text-body); }
+        
+        .code-box {
+            background: var(--code-bg); border: 1px solid var(--border);
+            border-left: 4px solid var(--primary);
+            border-radius: 12px; padding: 18px 22px; margin: 16px 0;
+            font-family: 'JetBrains Mono', monospace; font-size: 13.5px; color: var(--code-text);
+            line-height: 1.8;
+        }
+
+        .version-card {
+            background: var(--bg-subtle); border: 1px solid var(--border);
+            border-radius: var(--radius-md); padding: 22px 26px; margin: 20px 0;
+            display: grid; grid-template-columns: repeat(2, 1fr); gap: 12px;
+        }
+        @media (max-width: 480px) { .version-card { grid-template-columns: 1fr; } }
+        .version-card p { margin: 0; font-size: 14px; color: var(--text-body); }
+        .version-card strong { color: var(--text-heading); }
+
+        /* ── MODAL: IMAGE LIGHTBOX ── */
+        .modal-overlay {
+            position: fixed; inset: 0;
+            background: rgba(0, 0, 0, 0.85);
+            backdrop-filter: blur(8px);
+            z-index: 99999;
+            display: none; align-items: center; justify-content: center;
+            padding: 20px;
+        }
+        .modal-overlay.active { display: flex; animation: fadeIn 0.25s ease; }
+        @keyframes fadeIn { from{ opacity: 0; } to{ opacity: 1; } }
+        
+        .lightbox-box {
+            position: relative; max-width: 90vw; max-height: 90vh; text-align: center;
+        }
+        .lightbox-box img {
+            max-width: 100%; max-height: 82vh; border-radius: 16px;
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.7);
+            border: 2px solid rgba(255, 255, 255, 0.2);
+            object-fit: contain;
+        }
+        .lightbox-title {
+            color: white; font-size: 16px; font-weight: 800; margin-bottom: 12px;
+        }
+        .lightbox-actions {
+            margin-top: 14px; display: flex; justify-content: center; gap: 12px;
+        }
+        .lightbox-close-btn {
+            position: absolute; top: -16px; right: -16px;
+            width: 36px; height: 36px; border-radius: 50%;
+            background: #EF4444; color: white; border: none;
+            cursor: pointer; font-size: 16px; font-weight: 800;
+            display: flex; align-items: center; justify-content: center;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+        }
+
+        /* ── FLOATING CONTROLS (Back to top & Progress) ── */
+        .scroll-progress {
+            position: fixed; top: 0; left: 0; width: 0%; height: 3px;
+            background: linear-gradient(90deg, #F59E0B, #EA580C, #10B981);
+            z-index: 10001; transition: width 0.1s ease;
+        }
+
+        .floating-action-bar {
+            position: fixed; bottom: 24px; right: 24px;
+            display: flex; flex-direction: column; gap: 12px;
+            z-index: 999;
+        }
+        .fab-btn {
+            width: 48px; height: 48px; border-radius: 50%;
+            background: var(--bg-card); border: 1px solid var(--border);
+            color: var(--text-heading); display: flex; align-items: center; justify-content: center;
+            cursor: pointer; box-shadow: var(--shadow-md); transition: var(--transition);
+            font-size: 18px;
+        }
+        .fab-btn:hover {
+            transform: translateY(-3px) scale(1.05);
+            border-color: var(--primary); color: var(--primary);
+        }
+        .fab-btn.btn-top {
+            opacity: 0; visibility: hidden;
+            background: linear-gradient(135deg, #F59E0B 0%, #EA580C 100%);
+            color: white; border: none;
+        }
+        .fab-btn.btn-top.visible { opacity: 1; visibility: visible; }
+
+        /* ── RESPONSIVE MOBILE ── */
+        @media (max-width: 900px) {
+            .hero-content { flex-direction: column; text-align: center; gap: 44px; }
+            .hero-sub { margin-left: auto; margin-right: auto; }
+            .hero-tags { justify-content: center; }
+            .hero-actions { justify-content: center; }
+            .stats-grid { grid-template-columns: repeat(2, 1fr); }
+            .dev-card { flex-direction: column; text-align: center; padding: 32px 24px; }
+            .dev-links { justify-content: center; }
+            
+            .mobile-menu-btn { display: block; }
+            nav ul {
+                display: none; position: fixed;
+                top: 65px; left: 0; width: 100%;
+                background: var(--bg-card);
+                border-bottom: 1px solid var(--border);
+                flex-direction: column; padding: 24px 20px; gap: 18px;
+                z-index: 999; box-shadow: var(--shadow-lg);
+            }
+            nav ul.open { display: flex; }
+            .carousel-prev { left: 4px; }
+            .carousel-next { right: 4px; }
+        }
+
+        @media (max-width: 480px) {
+            .container { padding: 0 16px; }
+            .hero { padding: 40px 0 30px; }
+            .hero h1 { font-size: 32px; }
+            .btn { width: 100%; justify-content: center; }
+            .stats-grid { grid-template-columns: 1fr; }
+            .screenshot-item { width: 180px; }
+        }
+    </style>
+
+    <!-- Schema.org Microdata for SEO & Google Rich Snippets -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "MobileApplication",
+      "name": "UdharGuru",
+      "applicationCategory": "BusinessApplication",
+      "operatingSystem": "Android",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "INR"
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.8",
+        "reviewCount": "10500"
+      },
+      "description": "UdharGuru v2.9.5 — India's smartest digital ledger, automatic interest calculator (byaj), Bluetooth thermal POS billing, expense manager & stock tracking app. 100% Free & Offline-First.",
+      "softwareVersion": "2.9.5",
+      "fileSize": "36MB",
+      "author": {
+        "@type": "Organization",
+        "name": "Guruji Tech Point"
+      },
+      "downloadUrl": "https://play.google.com/store/apps/details?id=com.udharkhata.akhil"
+    }
+    </script>
 </head>
 <body>
-<!-- Navigation -->
-  <nav class="navbar">
-    <div class="container nav-wrapper">
-      <a href="index.html" class="brand-logo">
-        <div class="logo-badge">
-          <img src="assets/images/app_icon.png" alt="UdharGuru Official App Icon">
-        </div>
-        <div class="logo-text">
-          <span class="logo-main">UdharGuru</span>
-          <span class="logo-sub">Digital Ledger App</span>
-        </div>
-      </a>
 
-      <div class="nav-links">
-        <a href="index.html" class="nav-link">Home</a>
-        <a href="features.html" class="nav-link">Features</a>
-        <a href="calculator.html" class="nav-link">Byaj Calculator</a>
-        <a href="pricing.html" class="nav-link">Pricing</a>
-        <a href="about.html" class="nav-link">About</a>
-        <a href="security.html" class="nav-link">Security</a>
-        <a href="contact.html" class="nav-link">Contact</a>
-      </div>
+    <!-- Scroll Progress Indicator -->
+    <div class="scroll-progress" id="scrollProgress"></div>
 
-      <div class="nav-actions">
-        <!-- Interactive Animated Puggy Download CTA -->
-        <div class="puggy-download-btn-container nav-btn-container">
-<button class="btn-download-main trigger-download-modal" id="navDownloadBtn">
-            <span class="download-icon">⬇</span>
-            <span>Download</span>
-            <span class="btn-paw-panja">🐾</span>
-            <span class="paw-ripple"></span>
-          </button>
+    <!-- Lightbox Zoom Modal for Screenshots -->
+    <div class="modal-overlay" id="lightboxModal" onclick="closeLightbox()">
+        <div class="lightbox-box" onclick="event.stopPropagation()">
+            <button class="lightbox-close-btn" onclick="closeLightbox()">✕</button>
+            <div class="lightbox-title" id="lightboxTitle">App Preview</div>
+            <img id="lightboxImg" src="" alt="App Preview Fullscreen">
+            <div class="lightbox-actions">
+                <a href="https://play.google.com/store/apps/details?id=com.udharkhata.akhil" target="_blank" class="btn btn-primary" style="padding:10px 20px; font-size:13px;">
+                    <i class="fab fa-google-play"></i> Get on Google Play
+                </a>
+            </div>
         </div>
-        <button class="nav-mobile-btn" aria-label="Toggle navigation">☰</button>
-      </div>
     </div>
-  </nav>
 
-  <!-- Hero Section (Focus on UdharGuru & Download) -->
-  <header class="hero-section">
-    <div class="container hero-grid">
-      <div class="hero-content">
-        <div class="pill-badge">
-          <span class="pulse-dot"></span>
-          <span>Official Release • Engineered by Guruji Tech Point</span>
-        </div>
-        <h1 class="hero-title" style="font-family: var(--font-main);">
-          India's Smartest Digital Ledger, <br>
-          <span class="highlight">100% Free Forever</span>
-        </h1>
-        <p class="hero-subtitle">
-          Say goodbye to torn paper registers and lost accounts! <strong>UdharGuru</strong> is the simple, offline digital bahi-khata app designed for Indian shopkeepers. Record customer debit & credit, calculate monthly interest automatically, and send 1-click WhatsApp reminders.
-        </p>
-
-        <!-- Main Download Action Area -->
-        <div class="hero-actions" style="flex-direction: column; align-items: flex-start; gap: 1.25rem;">
-          <!-- Animated Cartoon Puggy Download Button -->
-          <div class="puggy-download-btn-container">
-<button class="btn-download-main trigger-download-modal" style="padding: 1.15rem 2.4rem; font-size: 1.15rem;" id="heroDownloadBtn">
-              <span class="download-icon">⬇</span>
-              <span>Download Free App Now</span>
-              <span class="btn-paw-panja">🐾</span>
-              <span class="btn-badge">4.8 ★</span>
-              <span class="paw-ripple"></span>
-            </button>
-          </div>
-
-          <!-- Direct Store Buttons Row -->
-          <div style="display: flex; gap: 0.85rem; flex-wrap: nowrap;">
-            <a href="https://play.google.com/store/apps/details?id=com.udharkhata.akhil" target="_blank" class="store-badge-card" style="padding: 0.6rem 1.25rem;">
-              <span class="store-icon" style="font-size: 1.35rem;">▶</span>
-              <div class="store-text-group">
-                <span class="small-label">GET IT ON</span>
-                <span class="big-store-name">Google Play</span>
-              </div>
-            </a>
-            <a href="https://firebasestorage.googleapis.com/v0/b/udharkhata-9199b.firebasestorage.app/o/udharguru%2Fapp-arm64-v8a-release.apk?alt=media&token=521b6034-58a9-446d-8a49-490777621824" target="_blank" class="store-badge-card" style="padding: 0.6rem 1.25rem; background: rgba(245, 158, 11, 0.08); border-color: rgba(245, 158, 11, 0.4);">
-              <span class="store-icon" style="font-size: 1.35rem;">📥</span>
-              <div class="store-text-group">
-                <span class="small-label">DIRECT INSTALL</span>
-                <span class="big-store-name">Direct APK</span>
-              </div>
-            </a>
-          </div>
-        </div>
-
-        <!-- Trust Stats -->
-        <div class="hero-stats-row">
-          <div class="stat-item">
-            <span class="stat-num">10,000<span class="plus">+</span></span>
-            <span class="stat-label">Active Merchants</span>
-          </div>
-          <div class="stat-item">
-            <span class="stat-num">4.8★</span>
-            <span class="stat-label">Google Play Rating</span>
-          </div>
-          <div class="stat-item">
-            <span class="stat-num">100%</span>
-            <span class="stat-label">Free Forever</span>
-          </div>
-          <div class="stat-item">
-            <span class="stat-num">0.0s</span>
-            <span class="stat-label">Instant Offline Speed</span>
-          </div>
-        </div>
-      </div>
-
-      <!-- Hero Visual with Mascot & App Icon -->
-      <div class="hero-visual">
-        <div class="mascot-card-wrapper">
-          <div class="floating-badge badge-top-left">
-            <div class="badge-icon green">
-              <img src="assets/images/app_icon.png" style="width: 32px; height: 32px; border-radius: 8px;" alt="Icon">
-            </div>
-            <div class="badge-details">
-              <h5>₹1,500 Received!</h5>
-              <p>Instant Digital Receipt</p>
-            </div>
-          </div>
-
-          <div class="mascot-image-container">
-            <img src="assets/images/puggy_hero.jpg" alt="UdharGuru Mascot Puggy holding digital ledger tablet">
-          </div>
-
-          <div class="floating-badge badge-bottom-right">
-            <div class="badge-icon amber">📈</div>
-            <div class="badge-details">
-              <h5>Auto Byaj Engine</h5>
-              <p>Simple & Monthly Compound</p>
-            </div>
-          </div>
-        </div>
-      </div>
+    <!-- Floating Action Buttons (Theme Toggle & Back To Top) -->
+    <div class="floating-action-bar">
+        <button class="fab-btn" id="themeToggleFab" onclick="toggleTheme()" title="Toggle Dark/Light Mode">
+            <i class="fas fa-moon" id="themeIcon"></i>
+        </button>
+        <button class="fab-btn btn-top" id="backToTop" onclick="scrollToTop()" title="Back to Top">
+            <i class="fas fa-arrow-up"></i>
+        </button>
     </div>
-  </header>
 
-  <!-- About UdharGuru Section ("Sirf UdharGuru ke baare me") -->
-  <section class="about-section" id="about" style="padding: 3.5rem 0; background: #ffffff; border-top: 1px solid var(--color-border); border-bottom: 1px solid var(--color-border);">
-    <div class="container">
-      <div class="about-grid-wrapper">
-        
-        <!-- Left: Captain Puggy Security Visual -->
-        <div class="mascot-card-wrapper" style="max-width: 440px; margin: 0 auto;">
-          <div class="mascot-image-container">
-            <img src="assets/images/puggy_about.jpg" alt="Captain Puggy protecting ledger safe vault">
-          </div>
-          <div class="floating-badge badge-bottom-right" style="bottom: -15px; right: -15px;">
-            <div class="badge-icon green">
-              <img src="assets/images/app_icon.png" style="width: 28px; height: 28px; border-radius: 6px;" alt="Icon">
+    <!-- HEADER / NAVIGATION -->
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo" onclick="showMainSite(); return false;">
+                    <div class="logo-icon-wrap"><img src="https://i.postimg.cc/sXmvm5np/app-icon.png" alt="UdharGuru app icon"></div>
+                    <div class="logo-text">
+                        <span class="brand-title">UdharGuru</span>
+                        <span class="logo-version">v2.9.5</span>
+                    </div>
+                </div>
+
+                <nav>
+                    <ul id="navLinks">
+                        <li><a href="#" onclick="showMainSite(); closeMenu(); return false;" class="active">Home</a></li>
+                        <li><a href="#features" onclick="showMainSite(); closeMenu();">Features</a></li>
+                        <li><a href="#calculator" onclick="showMainSite(); closeMenu();">Byaj Calculator</a></li>
+                        <li><a href="#screenshots" onclick="showMainSite(); closeMenu();">Screenshots</a></li>
+                        <li><a href="#" onclick="showSection('about'); closeMenu(); return false;">About & Docs</a></li>
+                        <li><a href="#" onclick="showSection('privacy'); closeMenu(); return false;">Privacy</a></li>
+                        <li><a href="#" onclick="showSection('terms'); closeMenu(); return false;">Terms</a></li>
+                        <li><a href="#" onclick="showSection('security'); closeMenu(); return false;">Security</a></li>
+                    </ul>
+
+                    <div class="header-actions">
+                        <button class="theme-btn-header" onclick="toggleTheme()" title="Toggle Dark/Light Mode">
+                            <i class="fas fa-moon" id="headerThemeIcon"></i>
+                        </button>
+                        <a href="https://play.google.com/store/apps/details?id=com.udharkhata.akhil" target="_blank" class="btn btn-primary" style="padding: 9px 18px; font-size: 13.5px;">
+                            <i class="fab fa-google-play"></i>
+                            <span>Get App</span>
+                        </a>
+                        <button class="mobile-menu-btn" onclick="toggleMenu()" aria-label="Open Navigation Menu">
+                            <i class="fas fa-bars"></i>
+                        </button>
+                    </div>
+                </nav>
             </div>
-            <div class="badge-details">
-              <h5>Captain Puggy</h5>
-              <p>256-bit Safe Data Guardian</p>
-            </div>
-          </div>
         </div>
+    </header>
 
-        <!-- Right: What is UdharGuru -->
-        <div>
-          <span class="section-tag" style="background:#fef3c7; color:#b45309;">About UdharGuru</span>
-          <h2 class="responsive-section-title" style="color: #0f172a; margin: 0.5rem 0 1.25rem; font-family: var(--font-main);">
-            What is UdharGuru & Why Was It Created?
-          </h2>
-          <p style="color: #64748b; line-height: 1.7; font-size: 1.05rem; margin-bottom: 1.25rem;">
-            For generations, Indian retailers, kirana shopkeepers, and wholesalers have relied on paper notebooks (Bahi-Khata) to track customer credit. But paper registers get torn, pages get lost, ink fades, and calculating monthly compound interest by hand causes awkward disputes and financial losses.
-          </p>
-          <p style="color: #64748b; line-height: 1.7; font-size: 1.05rem; margin-bottom: 2rem;">
-            <strong>UdharGuru</strong> was created to solve this forever. It is an all-in-one, ultra-fast mobile application that turns your smartphone into a smart digital ledger. Designed with love in India, UdharGuru works 100% offline, requires zero accounting training, and keeps every single rupee safe.
-          </p>
+    <!-- ════════ MAIN LANDING PAGE ════════ -->
+    <main id="mainSite">
 
-          <!-- 4 Core Pillars -->
-          <div class="pillars-grid" id="why">
-            <div class="pillar-card">
-              <div style="font-size: 1.5rem; margin-bottom: 0.35rem;">💰</div>
-              <h4 style="font-size: 1rem; font-weight: 800; color: #0f172a; margin-bottom: 0.25rem;">100% Free Forever</h4>
-              <p style="font-size: 0.85rem; color: #64748b; margin: 0; line-height: 1.5;">No subscription fees, no locked ledgers, and zero hidden charges.</p>
+        <!-- HERO SECTION -->
+        <section class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <div class="hero-text">
+                        <div class="hero-badge">
+                            <i class="fas fa-sparkles"></i>
+                            <span>UdharGuru v2.9.5 (Build 130) — Official Release</span>
+                        </div>
+                        <h1>Your Shop & Ledger,<br><span class="accent">Smarter, Faster & Digital</span></h1>
+                        <p class="hero-sub">Digital Khata Ledger, Automated Byaj (Interest) Calculator, Bluetooth Thermal POS Billing, Shop Expense Tracker & Multi-Business Store Management — 100% Free & Built for India.</p>
+                        
+                        <div class="hero-tags">
+                            <span class="tag-pill"><i class="fas fa-calculator"></i> Auto Byaj Engine</span>
+                            <span class="tag-pill"><i class="fas fa-print"></i> Thermal POS Billing</span>
+                            <span class="tag-pill"><i class="fas fa-store"></i> Multi-Shop Profiles</span>
+                            <span class="tag-pill"><i class="fab fa-whatsapp"></i> 1-Click WhatsApp PDF</span>
+                            <span class="tag-pill"><i class="fas fa-wifi-slash"></i> 100% Offline Hive</span>
+                        </div>
+
+                        <div class="hero-actions">
+                            <a href="https://play.google.com/store/apps/details?id=com.udharkhata.akhil" class="btn btn-primary" target="_blank">
+                                <i class="fab fa-google-play" style="font-size: 19px;"></i>
+                                <span>Download Free (Google Play)</span>
+                            </a>
+                            <a href="https://firebasestorage.googleapis.com/v0/b/udharkhata-9199b.firebasestorage.app/o/udharguru%2Fapp-arm64-v8a-release.apk?alt=media&token=88918ada-2cc3-4646-b279-cd671816cd99" class="btn btn-apk" download>
+                                <i class="fas fa-download" style="font-size: 19px;"></i>
+                                <span>Download APK (Direct)</span>
+                            </a>
+                            <a href="#" onclick="showSection('about'); return false;" class="btn btn-ghost">
+                                <i class="fas fa-book-open"></i>
+                                <span>Features Manual</span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="hero-image">
+                        <div class="phone-frame-wrapper">
+                            <img class="phone-frame" src="https://i.ibb.co/844cYyhf/Chat-GPT-Image-Jul-26-2026-06-46-25-AM.png" alt="UdharGuru App Dashboard Screen">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- LIVE STATS SECTION -->
+        <section class="stats">
+            <div class="container">
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <div class="stat-icon"><i class="fas fa-users"></i></div>
+                        <h3>10,000+</h3>
+                        <p>Active Merchants</p>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon" style="color:#F59E0B;"><i class="fas fa-star"></i></div>
+                        <h3>4.8★</h3>
+                        <p>Google Play Rating</p>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon" style="color:#10B981;"><i class="fas fa-shield-halved"></i></div>
+                        <h3>100%</h3>
+                        <p>Bank-Grade Secure</p>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon" style="color:#3B82F6;"><i class="fas fa-bolt"></i></div>
+                        <h3>0.0s</h3>
+                        <p>Instant Offline Speed</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- INTERACTIVE LIVE BYAJ CALCULATOR DEMO -->
+        <section class="calculator-section" id="calculator">
+            <div class="container">
+                <div class="section-header">
+                    <div class="section-label"><i class="fas fa-calculator"></i> Live Byaj Calculator</div>
+                    <h2 class="section-title">Calculate Byaj Instantly Like in UdharGuru</h2>
+                    <p class="section-sub">Test our automated interest engine directly in your browser. Toggle between Simple Interest and Monthly Compound Interest (Chakravriddhi Byaj).</p>
+                </div>
+
+                <div class="calc-wrapper">
+                    <!-- Controls -->
+                    <div class="calc-controls">
+                        <div class="calc-type-toggle">
+                            <button class="calc-type-btn active" id="btnSimpleByaj" onclick="setByajType('simple')">
+                                <i class="fas fa-equals"></i> Simple Byaj
+                            </button>
+                            <button class="calc-type-btn" id="btnCompoundByaj" onclick="setByajType('compound')">
+                                <i class="fas fa-chart-line"></i> Compound Byaj (Chakravriddhi)
+                            </button>
+                        </div>
+
+                        <div class="calc-form-group">
+                            <label>Principal Amount (Mool Dhan)</label>
+                            <div class="calc-input-wrap">
+                                <span class="currency-prefix">₹</span>
+                                <input type="number" id="calcPrincipal" class="calc-input" value="50000" min="100" step="500" oninput="runLiveByajCalculation()">
+                            </div>
+                        </div>
+
+                        <div class="calc-form-group">
+                            <label>Monthly Interest Rate (% Pratimaah Byaj)</label>
+                            <div class="calc-input-wrap">
+                                <span class="currency-prefix">%</span>
+                                <input type="number" id="calcRate" class="calc-input" value="2.0" min="0.1" step="0.25" oninput="runLiveByajCalculation()">
+                            </div>
+                        </div>
+
+                        <div class="calc-form-group">
+                            <label>Loan Duration (Months / Mahina)</label>
+                            <div class="calc-input-wrap">
+                                <span class="currency-prefix">📅</span>
+                                <input type="number" id="calcMonths" class="calc-input" value="6" min="1" max="120" step="1" oninput="runLiveByajCalculation()">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Live Breakdown Display -->
+                    <div class="calc-results-card">
+                        <div style="font-size:12px; font-weight:800; color:var(--primary); text-transform:uppercase; letter-spacing:1px; margin-bottom:4px;">
+                            <i class="fas fa-receipt"></i> Calculation Breakdown
+                        </div>
+                        <div class="calc-res-row">
+                            <span class="label">Principal Amount:</span>
+                            <span class="val" id="resPrincipal">₹50,000</span>
+                        </div>
+                        <div class="calc-res-row">
+                            <span class="label">Interest Mode:</span>
+                            <span class="val" id="resMode" style="color:var(--primary-hover);">Simple Interest (Sadharan)</span>
+                        </div>
+                        <div class="calc-res-row">
+                            <span class="label">Per Month Interest:</span>
+                            <span class="val" id="resMonthlyByaj">₹1,000 / mo</span>
+                        </div>
+                        <div class="calc-res-row">
+                            <span class="label">Total Byaj Accrued:</span>
+                            <span class="val" id="resTotalByaj" style="color:var(--danger);">₹6,000</span>
+                        </div>
+                        <div class="calc-total-box">
+                            <div class="total-label">Total Payable:</div>
+                            <div class="total-val" id="resTotalPayable">₹56,000</div>
+                        </div>
+                        <div style="font-size:11.5px; color:var(--text-muted); text-align:center; margin-top:8px;">
+                            ⚡ UdharGuru automatically calculates & posts monthly byaj transactions on due dates!
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CORE FEATURES SECTION -->
+        <section class="features" id="features">
+            <div class="container">
+                <div class="section-header">
+                    <div class="section-label"><i class="fas fa-crown"></i> App Capabilities (v2.9.5)</div>
+                    <h2 class="section-title">Everything your shop needs in one unified app</h2>
+                    <p class="section-sub">Engineered specifically for Indian retail shops, Kirana stores, wholesalers, distributors, service centers, and credit businesses.</p>
+                </div>
+
+                <div class="features-grid">
+                    <!-- 1. Auto Interest Engine -->
+                    <div class="feature-card">
+                        <div>
+                            <div class="feature-icon red"><i class="fas fa-calculator"></i></div>
+                            <h3>Auto Interest (Byaj) Engine</h3>
+                            <p>Set monthly percentage rates on credit accounts. Supports both Simple & Monthly Compound Interest with automatic monthly posting and live net balance updates.</p>
+                        </div>
+                        <span class="feature-tag" style="color: var(--danger);"><i class="fas fa-percent"></i> Simple & Compound Byaj</span>
+                    </div>
+
+                    <!-- 2. Thermal POS Billing -->
+                    <div class="feature-card">
+                        <div>
+                            <div class="feature-icon blue"><i class="fas fa-receipt"></i></div>
+                            <h3>Bill & Tax Invoice Generator</h3>
+                            <p>Create itemized bills (Kachha & Pakka Tax Invoices) with GST/Discounts. Print receipts directly using Bluetooth Thermal Printers (58mm/80mm) or export PDF.</p>
+                        </div>
+                        <span class="feature-tag" style="color: var(--info);"><i class="fas fa-print"></i> Thermal POS & Invoicing</span>
+                    </div>
+
+                    <!-- 3. Expense Manager -->
+                    <div class="feature-card">
+                        <div>
+                            <div class="feature-icon green"><i class="fas fa-wallet"></i></div>
+                            <h3>Expense Manager (Kharacha)</h3>
+                            <p>Track shop expenses like Rent, Electricity, Staff Salaries, Goods Purchase & Maintenance with visual category charts and daily/monthly P&L summaries.</p>
+                        </div>
+                        <span class="feature-tag" style="color: var(--success);"><i class="fas fa-chart-pie"></i> Kharacha Analytics</span>
+                    </div>
+
+                    <!-- 4. Inventory & Stock Tracking -->
+                    <div class="feature-card">
+                        <div>
+                            <div class="feature-icon purple"><i class="fas fa-boxes-stacked"></i></div>
+                            <h3>Inventory & Stock Manager</h3>
+                            <p>Maintain complete product catalog with buying/selling rates, track real-time stock units, and get instant Low Stock alerts before items run out.</p>
+                        </div>
+                        <span class="feature-tag" style="color: var(--accent-purple);"><i class="fas fa-bell"></i> Low Stock Alerts</span>
+                    </div>
+
+                    <!-- 5. Phonetic Duplicate Protection -->
+                    <div class="feature-card">
+                        <div>
+                            <div class="feature-icon"><i class="fas fa-users-gear"></i></div>
+                            <h3>Phonetic Duplicate Protection</h3>
+                            <p>Smart duplicate prevention ensures same-sounding customer names (e.g. "Raju", "raju", "RAJU") never duplicate your customer database or ledger records.</p>
+                        </div>
+                        <span class="feature-tag"><i class="fas fa-shield"></i> Clean Ledger</span>
+                    </div>
+
+                    <!-- 6. Multi-Business Stores -->
+                    <div class="feature-card">
+                        <div>
+                            <div class="feature-icon blue"><i class="fas fa-store"></i></div>
+                            <h3>Multi-Business Profiles</h3>
+                            <p>Operate multiple shops, branches, or distinct store khatas effortlessly within a single UdharGuru account. Switch between your businesses in 1 tap!</p>
+                        </div>
+                        <span class="feature-tag" style="color: var(--info);"><i class="fas fa-layer-group"></i> Multiple Shops</span>
+                    </div>
+
+                    <!-- 7. 1-Tap WhatsApp Share -->
+                    <div class="feature-card">
+                        <div>
+                            <div class="feature-icon green"><i class="fab fa-whatsapp"></i></div>
+                            <h3>1-Tap WhatsApp PDF & Receipts</h3>
+                            <p>Send instant payment reminders, PDF statements, and photo bill receipts directly to your customer's WhatsApp in Hindi, English, and regional formats in one tap.</p>
+                        </div>
+                        <span class="feature-tag" style="color: var(--success);"><i class="fas fa-paper-plane"></i> 1-Click WhatsApp Share</span>
+                    </div>
+
+                    <!-- 8. Biometric App Security -->
+                    <div class="feature-card">
+                        <div>
+                            <div class="feature-icon purple"><i class="fas fa-fingerprint"></i></div>
+                            <h3>Biometric & PIN Security Lock</h3>
+                            <p>Protect your shop accounts from unauthorized eyes. Lock your app with Fingerprint, Face ID, or a custom 4-digit security PIN for complete peace of mind.</p>
+                        </div>
+                        <span class="feature-tag" style="color: var(--accent-purple);"><i class="fas fa-lock"></i> 100% Private</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SCREENSHOTS SHOWCASE -->
+        <section class="screenshots" id="screenshots">
+            <div class="container">
+                <div class="section-header">
+                    <div class="section-label"><i class="fas fa-mobile-screen"></i> Real App Showcase</div>
+                    <h2 class="section-title">See UdharGuru v2.9.5 in action</h2>
+                    <p class="section-sub">Clean, fluid, and intuitive interface designed for everyday Indian shopkeepers. Click any screenshot to view in full resolution.</p>
+                </div>
+
+                <div class="screenshots-carousel-wrap">
+                    <button class="carousel-nav-btn carousel-prev" onclick="scrollScreenshots(-1)" aria-label="Previous Screenshot">
+                        <i class="fas fa-chevron-left"></i>
+                    </button>
+                    <button class="carousel-nav-btn carousel-next" onclick="scrollScreenshots(1)" aria-label="Next Screenshot">
+                        <i class="fas fa-chevron-right"></i>
+                    </button>
+
+                    <div class="screenshots-scroll" id="screenshotsScroll">
+                        <div class="screenshot-item" onclick="openLightbox('https://i.ibb.co/844cYyhf/Chat-GPT-Image-Jul-26-2026-06-46-25-AM.png', 'Home Dashboard Screen')">
+                            <img src="https://i.ibb.co/844cYyhf/Chat-GPT-Image-Jul-26-2026-06-46-25-AM.png" alt="Home Dashboard Screen">
+                            <div class="screenshot-caption">Home Screen</div>
+                            <div class="screenshot-hover-overlay"><i class="fas fa-magnifying-glass-plus"></i> &nbsp;ZOOM</div>
+                        </div>
+
+                        <div class="screenshot-item" onclick="openLightbox('https://i.ibb.co/HTq6YTKg/Chat-GPT-Image-Jul-26-2026-07-12-13-AM.png', 'Byaj (Interest) Calculator')">
+                            <img src="https://i.ibb.co/HTq6YTKg/Chat-GPT-Image-Jul-26-2026-07-12-13-AM.png" alt="Byaj Interest Calculator">
+                            <div class="screenshot-caption">Byaj Calculator</div>
+                            <div class="screenshot-hover-overlay"><i class="fas fa-magnifying-glass-plus"></i> &nbsp;ZOOM</div>
+                        </div>
+
+                        <div class="screenshot-item" onclick="openLightbox('https://i.ibb.co/ymQWRwh3/bill.png', 'Bill & Invoice Generator')">
+                            <img src="https://i.ibb.co/ymQWRwh3/bill.png" alt="Bill Generator">
+                            <div class="screenshot-caption">Bill Generator</div>
+                            <div class="screenshot-hover-overlay"><i class="fas fa-magnifying-glass-plus"></i> &nbsp;ZOOM</div>
+                        </div>
+
+                        <div class="screenshot-item" onclick="openLightbox('https://i.ibb.co/chZC5d1z/expense.png', 'Expense (Kharacha) Manager')">
+                            <img src="https://i.ibb.co/chZC5d1z/expense.png" alt="Expense Manager">
+                            <div class="screenshot-caption">Expense Manager</div>
+                            <div class="screenshot-hover-overlay"><i class="fas fa-magnifying-glass-plus"></i> &nbsp;ZOOM</div>
+                        </div>
+
+                        <div class="screenshot-item" onclick="openLightbox('https://i.ibb.co/YFpfbf4N/share.png', '1-Click WhatsApp PDF Share')">
+                            <img src="https://i.ibb.co/YFpfbf4N/share.png" alt="1-Click WhatsApp Share">
+                            <div class="screenshot-caption">WhatsApp Share</div>
+                            <div class="screenshot-hover-overlay"><i class="fas fa-magnifying-glass-plus"></i> &nbsp;ZOOM</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ABOUT FOUNDER -->
+        <section class="developer">
+            <div class="container">
+                <div class="section-header">
+                    <div class="section-label"><i class="fas fa-code"></i> Made in India</div>
+                    <h2 class="section-title">Built with Passion for Indian Merchants</h2>
+                </div>
+
+                <div class="dev-card">
+                    <div class="dev-avatar-box">GT</div>
+                    <div class="dev-info">
+                        <h2>Guruji Tech Point</h2>
+                        <div class="dev-role">Founder & Lead Engineer</div>
+                        <p>I engineered UdharGuru to eliminate paper registers for every small shopkeeper and small business owner in India. Manage your credit khata, print thermal invoices, calculate complex compound byaj, and track shop expenses digitally — with 100% data privacy and zero subscriptions.</p>
+                        <div class="dev-links">
+                            <a href="mailto:support@udharguru.in" class="dev-link"><i class="fas fa-envelope"></i> Contact Developer</a>
+                            <a href="https://play.google.com/store/apps/details?id=com.udharkhata.akhil" class="dev-link" target="_blank"><i class="fab fa-google-play"></i> Google Play Store</a>
+                            <a href="#" onclick="showSection('about'); return false;" class="dev-link"><i class="fas fa-book-open"></i> Full App Docs</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA DOWNLOAD SECTION -->
+        <section class="cta-section">
+            <div class="container">
+                <h2>Start managing your business digitally today</h2>
+                <p>Join 10,000+ smart shopkeepers using UdharGuru v2.9.5 (Build 130). 100% free, offline-first, and ultra-secure.</p>
+                <div style="display: flex; gap: 14px; justify-content: center; flex-wrap: wrap;">
+                    <a href="https://play.google.com/store/apps/details?id=com.udharkhata.akhil" class="btn btn-primary" target="_blank">
+                        <i class="fab fa-google-play"></i> Download from Google Play
+                    </a>
+                    <a href="https://firebasestorage.googleapis.com/v0/b/udharkhata-9199b.firebasestorage.app/o/udharguru%2Fapp-arm64-v8a-release.apk?alt=media&token=88918ada-2cc3-4646-b279-cd671816cd99" class="btn btn-apk" download>
+                        <i class="fas fa-download"></i> Download APK (Direct)
+                    </a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+    <!-- ════════ END MAIN LANDING PAGE ════════ -->
+
+    <!-- ════════ ABOUT & FEATURE MANUAL PAGE ════════ -->
+    <div class="section-page" id="aboutSection">
+        <div class="container">
+            <div class="back-nav-btn" onclick="showMainSite()">
+                <i class="fas fa-arrow-left"></i> Back to Main Site
             </div>
 
-            <div class="pillar-card">
-              <div style="font-size: 1.5rem; margin-bottom: 0.35rem;">⚡</div>
-              <h4 style="font-size: 1rem; font-weight: 800; color: #0f172a; margin-bottom: 0.25rem;">Works 100% Offline</h4>
-              <p style="font-size: 0.85rem; color: #64748b; margin: 0; line-height: 1.5;">Add transactions in remote mandis without internet. Syncs when online.</p>
+            <h1>About UdharGuru</h1>
+            <span class="page-date"><i class="fas fa-code-branch"></i> Version 2.9.5 &nbsp;·&nbsp; Build 130 &nbsp;·&nbsp; Updated October 2026</span>
+
+            <div class="version-card">
+                <p><strong>App Version:</strong> 2.9.5+130</p>
+                <p><strong>Active Merchants:</strong> 10,000+ Stores</p>
+                <p><strong>Play Store Rating:</strong> 4.8 / 5.0 ⭐</p>
+                <p><strong>Platform:</strong> Flutter, Hive Local DB & Firebase</p>
             </div>
 
-            <div class="pillar-card">
-              <div style="font-size: 1.5rem; margin-bottom: 0.35rem;">🧮</div>
-              <h4 style="font-size: 1rem; font-weight: 800; color: #0f172a; margin-bottom: 0.25rem;">Automated Byaj Engine</h4>
-              <p style="font-size: 0.85rem; color: #64748b; margin: 0; line-height: 1.5;">Calculates Simple & Monthly Compound interest without manual math.</p>
+            <div class="highlight-box">
+                <p><strong>UdharGuru v2.9.5</strong> is an enterprise-grade digital business management app designed for retail shops, wholesalers, and service providers. It combines Customer Credit Ledger (Khata), Automatic Interest Engine (Byaj), Bill/Invoice Generator, Shop Expense Manager, Inventory Stock Tracking, and 1-Click WhatsApp PDF/Receipt Sharing into one simple, free tool.</p>
+            </div>
+            
+            <h2><i class="fas fa-gift"></i> What's New in Version 2.9.5</h2>
+            <ul>
+                <li><strong>Automated Byaj Engine:</strong> Set monthly interest percentage rates (%) on credit loans. Automatic monthly additions for both Simple and Compound Interest.</li>
+                <li><strong>Bluetooth Thermal POS Printing:</strong> Wirelessly connect any 58mm or 80mm ESC/POS Thermal Receipt printer to print bills on the spot.</li>
+                <li><strong>NovaPay Seamless Gateway:</strong> Automated online UPI payments integration for Pro plan activations.</li>
+                <li><strong>Itemized Bill & Tax Invoice Creator:</strong> Create professional GST/tax bills, apply discounts, and generate instant PDFs.</li>
+                <li><strong>1-Click WhatsApp Sharing:</strong> Send payment reminders, image receipts, and PDF statements to customer WhatsApp in one single click.</li>
+                <li><strong>Shop Expense Manager (Kharacha Book):</strong> Record daily operational shop expenses (Rent, Electricity, Goods, Salaries) with visual category charts.</li>
+                <li><strong>Inventory & Stock Tracking:</strong> Maintain product catalog, set unit prices, track available quantities, and receive Low Stock alerts.</li>
+                <li><strong>Multi-Business Profiles:</strong> Manage multiple shops, branches or business profiles seamlessly from a single login.</li>
+                <li><strong>Biometric & PIN App Lock:</strong> Protect your financial data using Fingerprint / Face ID / PIN code security lock.</li>
+                <li><strong>JSON Full Backup & 5-Day Recycle Bin:</strong> Safely recover deleted records or export offline JSON backups anytime.</li>
+            </ul>
+
+            <h2><i class="fas fa-bullseye"></i> Our Mission</h2>
+            <p>To eliminate manual paper registers for every small shopkeeper in India by offering a 100% free, offline-ready, bank-grade secure digital business management system.</p>
+
+            <h2><i class="fas fa-book-open"></i> Detailed Module Guide</h2>
+            
+            <h3>1. Customer Khata & Phonetic Dedup</h3>
+            <p>Add customers, record credit given (Udhar / Lena Hai) and payments received (Jama / Dena Hai) with photo bill attachments and custom dates.</p>
+            <div class="code-box">
+                Example: Add "Raju Kumar" → Try adding "raju kumar"<br>
+                App Response: "Customer already exists: Raju Kumar" ✅
             </div>
 
-            <div class="pillar-card">
-              <div style="font-size: 1.5rem; margin-bottom: 0.35rem;">🛡️</div>
-              <h4 style="font-size: 1rem; font-weight: 800; color: #0f172a; margin-bottom: 0.25rem;">256-Bit Bank-Grade Security</h4>
-              <p style="font-size: 0.85rem; color: #64748b; margin: 0; line-height: 1.5;">Your private customer data is encrypted and backed up securely.</p>
+            <h3>2. Automatic Interest (Byaj) Engine</h3>
+            <p>Enable Interest on any credit transaction, set the monthly interest percentage (e.g. 2% or 3%), and choose Simple or Compound interest mode. The background engine calculates and posts monthly interest transactions automatically on due dates.</p>
+
+            <h3>3. Bill Generator & Bluetooth Thermal Printing</h3>
+            <p>Select products from inventory or enter custom items to generate instant PDF bills. Connect any standard Bluetooth Thermal Printer (POS) to print physical receipts on the spot.</p>
+
+            <h3>4. 1-Click WhatsApp PDF & Receipt Share</h3>
+            <p>Send instant PDF account statements, payment reminder alerts, or digital bill receipts directly to your customer's WhatsApp in just one tap.</p>
+
+            <h3>5. Expense Manager (Kharacha Book)</h3>
+            <p>Track business expenses separately from customer ledgers. Group expenses by category (Shop Rent, Utility Bills, Salaries, Stock Purchase) and view monthly P&L summaries.</p>
+
+            <h3>6. Security & Offline Architecture</h3>
+            <div class="info-box">
+                <ul>
+                    <li><strong>Biometric Lock:</strong> Enable Fingerprint, Face ID, or App PIN from Settings.</li>
+                    <li><strong>Offline Architecture:</strong> Ultra-fast Hive local database ensures zero lag offline.</li>
+                    <li><strong>Cloud Backup:</strong> Automatically backs up to encrypted Firebase cloud when connected.</li>
+                    <li><strong>Recycle Bin:</strong> Deleted data remains safely in the Recycle Bin for 5 days.</li>
+                </ul>
             </div>
-          </div>
+
+            <h2><i class="fas fa-headset"></i> Developer Support & Contact</h2>
+            <div class="highlight-box">
+                <p>Have suggestions, questions, or need assistance?<br>
+                Email: <a href="mailto:support@udharguru.in" style="color: var(--primary); font-weight: 800;">support@udharguru.in</a></p>
+            </div>
         </div>
-
-      </div>
     </div>
-  </section>
 
-  <!-- Focus on Download Section (The Centerpiece) -->
-  <section class="download-cta-section" id="download" style="padding: 5rem 0;">
-    <div class="container">
-      <div class="download-cta-banner">
-        <div class="cta-text-side">
-          <div style="display:flex; align-items:center; gap:0.85rem; margin-bottom:1rem;">
-            <img src="assets/images/app_icon.png" style="width:56px; height:56px; border-radius:14px; box-shadow:0 6px 16px rgba(0,0,0,0.3);" alt="UdharGuru Icon">
-            <div>
-              <span style="font-size:0.82rem; font-weight:800; color:#fef08a; text-transform:uppercase; letter-spacing:0.06em;">Official App Release</span>
-              <h4 style="margin:0; font-size:1.25rem; color:#ffffff;">UdharGuru App</h4>
+    <!-- ════════ PRIVACY POLICY PAGE ════════ -->
+    <div class="section-page" id="privacySection">
+        <div class="container">
+            <div class="back-nav-btn" onclick="showMainSite()">
+                <i class="fas fa-arrow-left"></i> Back to Main Site
             </div>
-          </div>
-          <h2 style="font-family: var(--font-main);">Download UdharGuru Free on Your Phone Today!</h2>
-          <p style="font-size: 1.05rem; line-height: 1.7; margin-bottom: 1.5rem;">
-            Join over 10,000+ Indian merchants who have stopped losing money on forgotten credits. Recover your dues 3x faster with 1-click WhatsApp payment reminders!
-          </p>
 
-          <!-- Store Buttons Row -->
-          <div class="app-store-badges-row" style="margin-bottom: 1.5rem;">
-            <a href="https://play.google.com/store/apps/details?id=com.udharkhata.akhil" target="_blank" class="store-badge-card">
-              <span class="store-icon">▶</span>
-              <div class="store-text-group">
-                <span class="small-label">GET IT ON</span>
-                <span class="big-store-name">Google Play</span>
-              </div>
-            </a>
+            <h1>Privacy Policy</h1>
+            <span class="page-date">Version 2.9.5 &nbsp;·&nbsp; Effective October 2026</span>
 
-            <a href="https://firebasestorage.googleapis.com/v0/b/udharkhata-9199b.firebasestorage.app/o/udharguru%2Fapp-arm64-v8a-release.apk?alt=media&token=521b6034-58a9-446d-8a49-490777621824" target="_blank" class="store-badge-card" style="background: rgba(245, 158, 11, 0.15); border-color: rgba(245, 158, 11, 0.4);">
-              <span class="store-icon">📥</span>
-              <div class="store-text-group">
-                <span class="small-label">DIRECT DOWNLOAD</span>
-                <span class="big-store-name">Android APK</span>
-              </div>
-            </a>
-          </div>
+            <div class="highlight-box">
+                <p>Your business data belongs strictly to you. UdharGuru processes your records encrypted under your personal account and never sells, rents, or monetizes user information to third-party ad networks.</p>
+            </div>
 
-          <!-- Animated Puggy Download Button in CTA -->
-          <div class="puggy-download-btn-container">
-<button class="btn-download-main trigger-download-modal" style="background: linear-gradient(135deg, #f59e0b 0%, #ea580c 100%); color: #ffffff; box-shadow: 0 6px 24px rgba(245, 158, 11, 0.5); padding: 1.1rem 2.2rem; font-size: 1.1rem;">
-              <span class="download-icon">⬇</span>
-              <span>Tap to Open Download Options</span>
-              <span class="btn-paw-panja">🐾</span>
-              <span class="btn-badge" style="background:#ffffff; color:#ea580c;">FREE</span>
-              <span class="paw-ripple"></span>
-            </button>
-          </div>
+            <h2><i class="fas fa-database"></i> What Information We Collect</h2>
+            <div class="info-box">
+                <ul>
+                    <li><strong>Account Authentication:</strong> Mobile phone number, display name, and Google email used for OAuth & Firebase authentication.</li>
+                    <li><strong>Ledger & Financial Data:</strong> Customer names, credit/debit entries, interest rates, notes, transaction dates, and attached receipt photos.</li>
+                    <li><strong>Billing & Inventory Data:</strong> Item names, prices, stock quantities, and invoice records generated in the app.</li>
+                    <li><strong>Expense Records:</strong> Categories, amounts, and notes entered in Expense Manager.</li>
+                    <li><strong>Bluetooth & Printer Info:</strong> Used solely to discover and connect local Bluetooth thermal receipt printers.</li>
+                </ul>
+            </div>
+
+            <h2><i class="fas fa-user-shield"></i> How Your Data Is Protected (100% Data Security)</h2>
+            <div class="info-box">
+                <ul>
+                    <li><strong>Encryption in Transit & At Rest:</strong> SSL/TLS 1.3 network encryption and encrypted Firebase Cloud Firestore storage (AES-256).</li>
+                    <li><strong>Biometric App Lock:</strong> Local device authentication (Fingerprint / Face / PIN) keeps local data safe from unauthorized physical access.</li>
+                    <li><strong>No Third-Party Data Sharing:</strong> Your ledgers, customer details, and sales figures are strictly confidential.</li>
+                </ul>
+            </div>
+
+            <h2><i class="fas fa-shield-alt"></i> Limitation of Liability for Cloud Infrastructure & Data Loss</h2>
+            <div class="info-box" style="border-left: 4px solid var(--danger); background: var(--danger-soft);">
+                <p>UdharGuru utilizes industry-leading Google Cloud / Firebase infrastructure for cloud hosting and synchronization. However, <strong>UdharGuru and its developers shall not be held liable or legally responsible</strong> for any data loss, data corruption, or server downtime resulting from:</p>
+                <ul>
+                    <li>Third-party cloud infrastructure failure, server downtime, or Google service outages.</li>
+                    <li>Device failure, operating system corruption, or unauthorized device access.</li>
+                    <li>User accidental deletion or failure to maintain regular backups.</li>
+                </ul>
+            </div>
+
+            <h2><i class="fas fa-sliders"></i> Your Data Control & Independent Backup</h2>
+            <div class="info-box">
+                <ul>
+                    <li><strong>JSON Backup & Restore:</strong> Export & import 100% of your data as a JSON file anytime via <em>Settings -> Backup & Data</em> for independent offline preservation.</li>
+                    <li><strong>Instant Export:</strong> Export complete ledger and expense statements to PDF.</li>
+                    <li><strong>Recycle Bin:</strong> Soft-deleted customers, transactions, and expenses can be recovered from the Recycle Bin within 5 days.</li>
+                    <li><strong>Permanent Account Deletion:</strong> Contact support at <a href="mailto:support@udharguru.in" style="color:var(--primary); font-weight:700;">support@udharguru.in</a> to erase your account permanently.</li>
+                </ul>
+            </div>
         </div>
-
-        <!-- Right Side: Scannable Google Play Store Link Card -->
-        <div class="cta-puggy-visual">
-          <a href="https://play.google.com/store/apps/details?id=com.udharkhata.akhil" target="_blank" class="cta-puggy-box" style="background: rgba(255,255,255,0.06); padding: 1.75rem; border-radius: var(--radius-xl); border: 1.5px solid rgba(245, 158, 11, 0.4); text-align: center; text-decoration: none; display: block; transition: all 0.25s ease;">
-            <div style="background: #ffffff; padding: 0.85rem; border-radius: 16px; display: inline-block; margin-bottom: 0.85rem; box-shadow: 0 10px 25px rgba(0,0,0,0.3);">
-              <img src="assets/images/playstore_qr.png" alt="Google Play Store QR Code" style="width: 130px; height: 130px; display: block; border-radius: 8px;">
-            </div>
-            <h4 style="color: #ffffff; font-size: 1.15rem; margin-bottom: 0.35rem; display: flex; align-items: center; justify-content: center; gap: 0.4rem;">
-              <span>▶</span> Google Play Store Link
-            </h4>
-            <p style="color: #cbd5e1; font-size: 0.85rem; margin-bottom: 0.85rem;">Scan QR with phone camera or tap to install</p>
-            <div style="display: inline-flex; align-items: center; gap: 0.5rem; background: linear-gradient(135deg, #f59e0b 0%, #ea580c 100%); color: #ffffff; padding: 0.55rem 1.25rem; border-radius: 99px; font-size: 0.85rem; font-weight: 700; box-shadow: 0 4px 14px rgba(234, 88, 12, 0.4);">
-              <span>📲 Open on Google Play →</span>
-            </div>
-          </a>
-        </div>
-      </div>
     </div>
-  </section>
 
-  <!-- Dedicated Technology & Developer Spotlight -->
-  <section class="dev-spotlight-section" style="background: #ffffff; padding: 3.5rem 0; border-top: 1px solid var(--color-border); border-bottom: 1px solid var(--color-border);">
-    <div class="container">
-      <div class="dev-spotlight-grid">
-        <div style="text-align: center;">
-          <div class="dev-avatar-box">
-            <img src="assets/images/developer_badge.png" style="width:100%; height:100%; object-fit:cover;" alt="Guruji Tech Point 3D Developer Avatar">
-          </div>
-          <div style="margin-top: 1.25rem;">
-            <h4 style="font-size: 1.35rem; font-weight: 800; color: #0f172a;">Guruji Tech Point</h4>
-            <span style="font-size: 0.82rem; font-weight: 700; color: #b45309; background: #fef3c7; border: 1px solid rgba(245, 158, 11, 0.3); padding: 0.25rem 0.8rem; border-radius: 99px;">Lead Software Architect</span>
-          </div>
-        </div>
-
-        <div>
-          <span class="section-tag" style="background:#fef3c7; color:#b45309;">Development Partner Spotlight</span>
-          <h2 class="responsive-section-title" style="color: #0f172a; margin: 0.5rem 0 1rem; font-family: var(--font-main);">
-            Developed with Passion by Guruji Tech Point
-          </h2>
-          <p style="color: #64748b; line-height: 1.7; font-size: 1.02rem; margin-bottom: 1.5rem;">
-            The technological architecture behind UdharGuru was meticulously engineered by <strong>Guruji Tech Point</strong> to deliver lightning-fast responsiveness, foolproof 256-bit cryptographic data security, and an intuitive user interface tailored for Indian merchants of all digital literacy levels.
-          </p>
-
-          <div class="tech-subgrid">
-            <div style="display: flex; gap: 0.75rem; align-items: center;">
-              <span style="font-size: 1.3rem;">⚡</span>
-              <div>
-                <strong style="color: #0f172a; font-size: 0.95rem;">High-Speed Hive DB</strong>
-                <p style="font-size: 0.82rem; color: #64748b; margin: 0;">Instant 0.0s offline transactions</p>
-              </div>
+    <!-- ════════ TERMS AND CONDITIONS PAGE ════════ -->
+    <div class="section-page" id="termsSection">
+        <div class="container">
+            <div class="back-nav-btn" onclick="showMainSite()">
+                <i class="fas fa-arrow-left"></i> Back to Main Site
             </div>
 
-            <div style="display: flex; gap: 0.75rem; align-items: center;">
-              <span style="font-size: 1.3rem;">🔒</span>
-              <div>
-                <strong style="color: #0f172a; font-size: 0.95rem;">Encrypted Cloud Sync</strong>
-                <p style="font-size: 0.82rem; color: #64748b; margin: 0;">Zero data loss guarantee</p>
-              </div>
+            <h1>Terms and Conditions</h1>
+            <span class="page-date">Version 2.9.5 &nbsp;·&nbsp; Effective October 2026</span>
+
+            <div class="highlight-box">
+                <p>Welcome to <strong>UdharGuru</strong>. By installing or using our application, you agree to these Terms and Conditions.</p>
             </div>
-          </div>
+
+            <h2>1. Services Offered</h2>
+            <p>UdharGuru provides business accounting software tools including Customer Ledger Tracking, Automatic Interest Calculations, Multi-Business Profiles, PDF Statement Generation, WhatsApp Share, Digital Invoice Creation, Bluetooth Thermal Printing integration, Expense Management, JSON Backup & Restore, and Inventory Management.</p>
+
+            <h2>2. Account Security & Verification</h2>
+            <ul>
+                <li>You must provide a valid mobile number or Google account for authentication.</li>
+                <li>You are responsible for keeping your PIN code, biometric lock, and device access secure.</li>
+                <li>Each user account is linked to the primary account credentials provided during registration.</li>
+            </ul>
+
+            <h2>3. User Responsibilities & Backup Maintenance</h2>
+            <ul>
+                <li>You agree to use UdharGuru solely for legitimate business record keeping.</li>
+                <li>You are responsible for ensuring the accuracy of credit/debit entries, interest rates, and issued bills.</li>
+                <li>Users are strongly advised to regularly export JSON data backups to ensure an independent copy of their data.</li>
+            </ul>
+
+            <h2>4. Service Availability & Third-Party Outage Disclaimer</h2>
+            <p>UdharGuru is provided on an "AS IS" and "AS AVAILABLE" basis. While offline data is stored on your device and synced with Google Cloud Firestore, <strong>UdharGuru and its developers disclaim all liability for third-party cloud service outages, data deletion, or server interruptions beyond developer control.</strong></p>
         </div>
-      </div>
     </div>
-  </section>
 
-  <!-- Download Modal -->
-  <div class="modal-backdrop" id="downloadModal">
-    <div class="modal-content-card">
-      <button class="modal-close-btn" aria-label="Close modal">✕</button>
-      <div class="modal-grid">
-        <div class="modal-puggy-side">
-          <img src="assets/images/puggy_download_click.jpg" class="modal-puggy-img" alt="Puggy Mascot clicking">
-          <h4 style="font-weight: 800; color: #92400e; font-size: 1.15rem;">Puggy is Ready!</h4>
-          <p style="font-size: 0.85rem; color: #b45309; margin-top: 0.25rem;">Download UdharGuru App for free and make your bookkeeping simple.</p>
+    <!-- ════════ SECURITY STANDARDS PAGE ════════ -->
+    <div class="section-page" id="securitySection">
+        <div class="container">
+            <div class="back-nav-btn" onclick="showMainSite()">
+                <i class="fas fa-arrow-left"></i> Back to Main Site
+            </div>
+
+            <h1>Security Standards</h1>
+            <span class="page-date">Version 2.9.5 &nbsp;·&nbsp; Security Overview</span>
+
+            <div class="highlight-box">
+                <p>Security is the foundation of UdharGuru. We employ multi-layer security measures to keep your business numbers and customer privacy completely safe.</p>
+            </div>
+
+            <h2><i class="fas fa-lock"></i> Encryption Architecture (100% Data Protection)</h2>
+            <div class="info-box">
+                <ul>
+                    <li><strong>TLS 1.3 Encryption:</strong> All data transmitted between your device and Google Firebase servers is encrypted using standard HTTPS/TLS protocols.</li>
+                    <li><strong>Encrypted Storage:</strong> Database collections on Google Cloud Firestore are encrypted at rest with AES-256 keys.</li>
+                    <li><strong>Biometric Protection:</strong> Optional Fingerprint and PIN lock screen prevents local unauthorized access to your phone app.</li>
+                    <li><strong>JSON Offline Backup:</strong> Instant export and import of your ledger data for complete user data autonomy.</li>
+                </ul>
+            </div>
+
+            <h2><i class="fas fa-shield-virus"></i> Device & Infrastructure Security</h2>
+            <div class="info-box">
+                <ul>
+                    <li><strong>Bluetooth Printing Security:</strong> Printer connections are ephemeral and confined strictly to transmitting invoice print jobs.</li>
+                    <li><strong>No Hidden Background Data Access:</strong> The app accesses hardware features only when explicitly used.</li>
+                </ul>
+            </div>
+
+            <h2><i class="fas fa-bug"></i> Reporting Vulnerabilities</h2>
+            <div class="highlight-box">
+                <p>If you identify a security issue, please notify our team immediately at:<br>
+                <a href="mailto:support@udharguru.in" style="color: var(--primary); font-weight: 800;">support@udharguru.in</a></p>
+            </div>
         </div>
-
-        <div class="modal-form-side">
-          <div style="display:flex; align-items:center; gap:0.75rem; margin-bottom:1rem;">
-            <img src="assets/images/app_icon.png" style="width:48px; height:48px; border-radius:12px; box-shadow:0 4px 10px rgba(0,0,0,0.15);" alt="UdharGuru App">
-            <div>
-              <h3 style="font-size: 1.35rem; font-weight: 800; color: #0f172a; margin:0; line-height:1.2;">UdharGuru App</h3>
-              <span style="font-size: 0.78rem; color: #ea580c; font-weight: 700;">★ 4.8 • 10,000+ Merchants</span>
-            </div>
-          </div>
-          <p style="font-size: 0.88rem; color: #64748b; margin-bottom: 1.25rem;">Get the official UdharGuru app directly on your phone or install from Google Play Store:</p>
-
-          <div style="display: flex; gap: 0.5rem; margin-bottom: 1rem;">
-            <input type="tel" id="appPhoneInput" class="form-input" placeholder="Enter 10-digit mobile number" maxlength="10">
-            <button id="btnSendAppLink" class="btn-download-main" style="padding: 0.6rem 1.2rem; white-space: nowrap; font-size: 0.88rem;">
-              <span>Send Link</span>
-            </button>
-          </div>
-
-          <!-- Google Play Store QR Scanner & Direct Link -->
-          <a href="https://play.google.com/store/apps/details?id=com.udharkhata.akhil" target="_blank" class="qr-container">
-            <div class="qr-box">
-              <img src="assets/images/playstore_qr.png" alt="Google Play Store QR Code">
-            </div>
-            <div style="flex: 1;">
-              <div style="display:flex; align-items:center; gap:0.35rem; margin-bottom:0.15rem;">
-                <span style="font-size:0.75rem; font-weight:800; color:#ea580c; text-transform:uppercase; letter-spacing:0.04em;">Official Google Play Link</span>
-              </div>
-              <h5 style="font-size: 0.95rem; font-weight: 800; color: #0f172a; margin: 0;">Scan or Tap to Open</h5>
-              <p style="font-size: 0.78rem; color: #64748b; margin: 0.15rem 0 0;">Instantly opens app page on Google Play Store →</p>
-            </div>
-          </a>
-
-          <div style="display: flex; gap: 0.75rem; margin-top: 0.5rem;">
-            <a href="https://play.google.com/store/apps/details?id=com.udharkhata.akhil" target="_blank" class="store-badge-card" style="flex:1; justify-content:center; padding:0.55rem;">
-              <span class="store-icon" style="font-size:1.2rem;">▶</span>
-              <span style="font-size:0.82rem; font-weight:700;">Google Play</span>
-            </a>
-            <a href="https://firebasestorage.googleapis.com/v0/b/udharkhata-9199b.firebasestorage.app/o/udharguru%2Fapp-arm64-v8a-release.apk?alt=media&token=521b6034-58a9-446d-8a49-490777621824" target="_blank" class="store-badge-card" style="flex:1; justify-content:center; padding:0.55rem; background: rgba(245, 158, 11, 0.08); border-color: rgba(245, 158, 11, 0.3);">
-              <span class="store-icon" style="font-size:1.2rem;">📥</span>
-              <span style="font-size:0.82rem; font-weight:700;">Direct APK</span>
-            </a>
-          </div>
-        </div>
-      </div>
     </div>
-  </div>
 
-  <!-- ========================================================
-       SEO Trending Ledger Keywords & Discovery Hub Section
-       ======================================================== -->
-  <section class="seo-keywords-section" id="trending-keywords">
-    <div class="container">
-      <div class="seo-hub-card">
-        <div class="seo-hub-header">
-          <div class="seo-trending-badge">
-            <span>🔥 Trending Ledger Searches & SEO Hub</span>
-          </div>
-          <h2 class="seo-hub-title">
-            भारत की सबसे लोकप्रिय <span>डिजिटल लेजर व बही-खाता</span> खोजें
-          </h2>
-          <p class="seo-hub-desc">
-            दुकानदारों, व्यापारियों और सूक्ष्म उद्योगों द्वारा Google और Play Store पर सबसे ज्यादा खोजे जाने वाले ट्रेंडिंग लेजर और हिसाब-किताब कीवर्ड्स। UdharGuru आपकी हर वित्तीय जरूरत को पूरा करता है:
-          </p>
+    <!-- FOOTER -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="logo" onclick="showMainSite(); return false;">
+                        <div class="logo-icon-wrap"><img src="https://i.postimg.cc/sXmvm5np/app-icon.png" alt="UdharGuru app icon"></div>
+                        <div class="logo-text">
+                            <span class="brand-title">UdharGuru</span>
+                        </div>
+                    </div>
+                    <p>India's smartest digital ledger, interest calculator, Bluetooth thermal POS billing & expense manager app. 100% free, secure, and offline-first.</p>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Product & Features</h4>
+                    <ul>
+                        <li><a href="#" onclick="showMainSite(); return false;">Home</a></li>
+                        <li><a href="#features" onclick="showMainSite();">Features</a></li>
+                        <li><a href="#calculator" onclick="showMainSite();">Byaj Calculator</a></li>
+                        <li><a href="#screenshots" onclick="showMainSite();">Screenshots</a></li>
+                        <li><a href="https://play.google.com/store/apps/details?id=com.udharkhata.akhil" target="_blank">Download Google Play</a></li>
+                        <li><a href="https://firebasestorage.googleapis.com/v0/b/udharkhata-9199b.firebasestorage.app/o/udharguru%2Fapp-arm64-v8a-release.apk?alt=media&token=88918ada-2cc3-4646-b279-cd671816cd99" download><i class="fas fa-download" style="color: #10B981; margin-right: 4px;"></i> Download APK (Direct)</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Documentation & Legal</h4>
+                    <ul>
+                        <li><a href="#" onclick="showSection('about'); return false;">About & Docs</a></li>
+                        <li><a href="#" onclick="showSection('privacy'); return false;">Privacy Policy</a></li>
+                        <li><a href="#" onclick="showSection('terms'); return false;">Terms & Conditions</a></li>
+                        <li><a href="#" onclick="showSection('security'); return false;">Security Architecture</a></li>
+                        <li><a href="mailto:support@udharguru.in">Contact Developer</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 UdharGuru v2.9.5 (Build 130). All rights reserved.</p>
+                <p class="made-with">Made with ❤️ in India by <strong>Guruji Tech Point</strong></p>
+            </div>
         </div>
+    </footer>
 
-        <div class="seo-categories-grid">
-          <!-- Category 1 -->
-          <div class="seo-category-group">
-            <h3 class="seo-cat-title">
-              <span>📱</span> डिजिटल लेजर व बही-खाता
-            </h3>
-            <div class="seo-tags-grid">
-              <span class="seo-kw-tag hot">🔥 Digital Ledger App</span>
-              <span class="seo-kw-tag hot">🔥 Udhar Khata Book</span>
-              <span class="seo-kw-tag">डिजिटल बही खाता (Bahi Khata)</span>
-              <span class="seo-kw-tag">स्मार्ट उधार बुक (Smart Khata)</span>
-              <span class="seo-kw-tag">Free Ledger Book App</span>
-              <span class="seo-kw-tag">Offline Khata Book (बिना इंटरनेट)</span>
-              <span class="seo-kw-tag">Dukandar Ledger Book</span>
-              <span class="seo-kw-tag">Digital Khata India</span>
-              <span class="seo-kw-tag">Mobile Khata Dairy</span>
-            </div>
-          </div>
+    <!-- ════════ JAVASCRIPT LOGIC ════════ -->
+    <script>
+        window.addEventListener('load', function() {
+            runLiveByajCalculation();
+            handleUrlHash();
+        });
 
-          <!-- Category 2 -->
-          <div class="seo-category-group">
-            <h3 class="seo-cat-title">
-              <span>💼</span> व्यापार व ग्राहक हिसाब-किताब
-            </h3>
-            <div class="seo-tags-grid">
-              <span class="seo-kw-tag hot">🔥 व्यापार हिसाब किताब</span>
-              <span class="seo-kw-tag hot">🔥 Credit Debit Tracker</span>
-              <span class="seo-kw-tag">कस्टमर लेजर (Customer Ledger)</span>
-              <span class="seo-kw-tag">पार्टी लेजर स्टेटमेंट (Party Khata)</span>
-              <span class="seo-kw-tag">दुकानदार बहीखाता (Shopkeeper Ledger)</span>
-              <span class="seo-kw-tag">Daily Transaction Ledger</span>
-              <span class="seo-kw-tag">Small Business Accounting</span>
-              <span class="seo-kw-tag">Tally on Mobile Alternative</span>
-              <span class="seo-kw-tag">WhatsApp Payment Reminder</span>
-            </div>
-          </div>
+        // Scroll Progress Bar
+        window.addEventListener('scroll', function() {
+            const scrollProgress = document.getElementById('scrollProgress');
+            const totalHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+            if (totalHeight > 0) {
+                const progress = (window.pageYOffset / totalHeight) * 100;
+                scrollProgress.style.width = progress + '%';
+            }
 
-          <!-- Category 3 -->
-          <div class="seo-category-group">
-            <h3 class="seo-cat-title">
-              <span>💰</span> ब्याज, लोन व कैलकुलेटर
-            </h3>
-            <div class="seo-tags-grid">
-              <span class="seo-kw-tag hot">🔥 ब्याज कैलकुलेटर (Byaj Calc)</span>
-              <span class="seo-kw-tag hot">🔥 Simple & Compound Interest</span>
-              <span class="seo-kw-tag">गाँव का ब्याज हिसाब (Gramin Byaj)</span>
-              <span class="seo-kw-tag">मासिक व वार्षिक ब्याज (Monthly Rate)</span>
-              <span class="seo-kw-tag">लोन खाता ट्रैकर (Loan Ledger)</span>
-              <span class="seo-kw-tag">उधारी पर ब्याज गणना</span>
-              <span class="seo-kw-tag">Finance Book & Interest Manager</span>
-              <span class="seo-kw-tag">Daily Interest Calculator</span>
-            </div>
-          </div>
+            // Back to top button visibility
+            const backToTop = document.getElementById('backToTop');
+            if (backToTop) {
+                if (window.pageYOffset > 350) {
+                    backToTop.classList.add('visible');
+                } else {
+                    backToTop.classList.remove('visible');
+                }
+            }
+        });
 
-          <!-- Category 4 -->
-          <div class="seo-category-group">
-            <h3 class="seo-cat-title">
-              <span>🛡️</span> सुरक्षित, ऑफलाइन व रिपोर्ट
-            </h3>
-            <div class="seo-tags-grid">
-              <span class="seo-kw-tag hot">🔥 100% Offline Ledger</span>
-              <span class="seo-kw-tag hot">🔥 256-bit Encrypted Security</span>
-              <span class="seo-kw-tag">PDF Ledger Report Export</span>
-              <span class="seo-kw-tag">ऑटो बैकअप लेजर (Auto Backup)</span>
-              <span class="seo-kw-tag">ग्राहक बिल व रसीद स्टेटमेंट</span>
-              <span class="seo-kw-tag">Zero Subscription Fee (100% Free)</span>
-              <span class="seo-kw-tag">No Bank Account Required</span>
-              <span class="seo-kw-tag">Guruji Tech Point App</span>
-            </div>
-          </div>
-        </div>
+        function scrollToTop() {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
 
-        <div class="seo-summary-card">
-          <p>
-            <strong>💡 UdharGuru क्यों है ट्रेंडिंग?</strong> UdharGuru भारत का आधुनिक, तेज़ और 100% सुरक्षित <strong>Digital Ledger & Udhar Khata Book</strong> ऐप है। यह खुदरा दुकानदारों (Kirana Stores), व्यापारियों (Wholesalers), सर्विस प्रोवाइडर्स और छोटे व्यवसायों को बिना इंटरनेट के भी ग्राहक उधारी, भुगतान रिकॉर्ड, सटीक <strong>ब्याज कैलकुलेशन (Interest Engine)</strong> और instant <strong>WhatsApp Payment Reminders</strong> भेजने की पूरी आज़ादी देता है। आज ही मुफ़्त में डाउनलोड करें और अपने व्यवसाय को डिजिटल बनाएं!
-          </p>
-        </div>
-      </div>
-    </div>
-  </section>
+        // Navigation Menu
+        function toggleMenu() {
+            document.getElementById('navLinks').classList.toggle('open');
+        }
+        function closeMenu() {
+            document.getElementById('navLinks').classList.remove('open');
+        }
 
-  <!-- Footer -->
-  <footer class="footer">
-    <div class="container">
-      <div class="footer-grid" style="grid-template-columns: 1.5fr 1fr; align-items: center;">
-        <div class="footer-col">
-          <div class="brand-logo" style="margin-bottom: 1rem;">
-            <div class="logo-badge">
-              <img src="assets/images/app_icon.png" alt="UdharGuru Official App Icon">
-            </div>
-            <div class="logo-text">
-              <span class="logo-main" style="color:#ffffff;-webkit-text-fill-color:#ffffff;">UdharGuru</span>
-              <span class="logo-sub" style="color:#f59e0b;">Digital Ledger App</span>
-            </div>
-          </div>
-          <p style="font-size: 0.9rem; line-height: 1.6; color: #94a3b8; max-width: 480px; margin-bottom: 1rem;">
-            UdharGuru empowers Indian retail shopkeepers, merchants, and small businesses with 100% free digital bookkeeping, automated interest calculations, and bank-grade data security.
-          </p>
-          <div style="display:flex; gap:1rem; font-size:0.9rem; color:#fde68a;">
-            <span>🛡️ 256-bit SSL Protection</span>
-            <span>⚡ 100% Offline Speed</span>
-            <span>🇮🇳 Made with ❤️ in India</span>
-          </div>
-        </div>
+        // Section Pages Navigation
+        function showSection(name) {
+            document.getElementById('mainSite').style.display = 'none';
+            document.querySelectorAll('.section-page').forEach(s => s.classList.remove('active'));
+            const el = document.getElementById(name + 'Section');
+            if (el) {
+                el.classList.add('active');
+                window.location.hash = name;
+            }
+            window.scrollTo(0, 0);
+        }
 
-        <div class="footer-col" style="text-align: right;">
-          <h4 style="color:#ffffff; margin-bottom:0.75rem;">Download App</h4>
-          <div style="display:flex; flex-direction:column; gap:0.5rem; align-items:flex-end;">
-            <a href="https://play.google.com/store/apps/details?id=com.udharkhata.akhil" target="_blank" style="color:#f59e0b; font-weight:700;">▶ Google Play Store →</a>
-            <a href="https://firebasestorage.googleapis.com/v0/b/udharkhata-9199b.firebasestorage.app/o/udharguru%2Fapp-arm64-v8a-release.apk?alt=media&token=521b6034-58a9-446d-8a49-490777621824" target="_blank" style="color:#ea580c; font-weight:700;">📥 Direct APK Download →</a>
-          </div>
-        </div>
-      </div>
+        function showMainSite() {
+            document.getElementById('mainSite').style.display = 'block';
+            document.querySelectorAll('.section-page').forEach(s => s.classList.remove('active'));
+            history.pushState("", document.title, window.location.pathname + window.location.search);
+            window.scrollTo(0, 0);
+        }
 
-      <!-- Developer Attribution Bar -->
-      <div class="developer-credit-bar">
-        <div class="dev-credit-wrapper">
-          <div class="dev-credit-card">
-            <div class="dev-credit-avatar">
-              <img src="assets/images/developer_badge.png" alt="3D Developer Coding Badge Guruji Tech Point">
-            </div>
-            <div class="dev-credit-info">
-              <h4>
-                <span>Crafted by Guruji Tech Point</span>
-                <span class="verified-tag">✓ Lead Architect</span>
-              </h4>
-              <p>Specialized in High-Performance Mobile Applications, FinTech Systems & Modern Web Experiences</p>
-              <div class="dev-credit-links">
-                <span class="dev-badge-pill">🚀 Full-Stack Engineering</span>
-                <span class="dev-badge-pill">🔒 256-bit Cryptography</span>
-                <span class="dev-badge-pill">📱 Flutter & Android Native</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+        function handleUrlHash() {
+            const hash = (window.location.hash || '').replace('#', '');
+            if (['about', 'privacy', 'terms', 'security'].includes(hash)) {
+                showSection(hash);
+            }
+        }
+        window.addEventListener('hashchange', handleUrlHash);
 
-      <div class="footer-bottom">
-        <p>© 2026 UdharGuru. All rights reserved. Developed with excellence by Guruji Tech Point.</p>
-        <div style="display:flex; gap:1.25rem; flex-wrap:wrap;">
-          <a href="calculator.html" style="color:#94a3b8;">Interest Engine</a>
-          <a href="security.html" style="color:#94a3b8;">Security Standards</a>
-          <a href="privacy.html" style="color:#94a3b8;">Privacy Policy</a>
-          <a href="terms.html" style="color:#94a3b8;">Terms & Conditions</a>
-          <a href="#download" style="color:#f59e0b; font-weight:700;">Download App</a>
-        </div>
-      </div>
-    </div>
-  </footer>
+        // Dark / Light Theme Engine
+        function toggleTheme() {
+            const html = document.documentElement;
+            const current = html.getAttribute('data-theme') || 'light';
+            const next = current === 'light' ? 'dark' : 'light';
+            setTheme(next);
+        }
 
-  <script src="js/main.js?v=20261016_v5"></script>
+        function setTheme(theme) {
+            const html = document.documentElement;
+            html.setAttribute('data-theme', theme);
+            localStorage.setItem('udharguru_theme', theme);
+
+            const iconFab = document.getElementById('themeIcon');
+            const iconHeader = document.getElementById('headerThemeIcon');
+
+            if (theme === 'dark') {
+                if (iconFab) { iconFab.className = 'fas fa-sun'; iconFab.style.color = '#FBBF24'; }
+                if (iconHeader) { iconHeader.className = 'fas fa-sun'; iconHeader.style.color = '#FBBF24'; }
+            } else {
+                if (iconFab) { iconFab.className = 'fas fa-moon'; iconFab.style.color = ''; }
+                if (iconHeader) { iconHeader.className = 'fas fa-moon'; iconHeader.style.color = ''; }
+            }
+        }
+
+        // Init Theme
+        (function() {
+            const saved = localStorage.getItem('udharguru_theme');
+            if (saved === 'dark' || (!saved && window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+                setTheme('dark');
+            } else {
+                setTheme('light');
+            }
+        })();
+
+        // Screenshots Carousel Navigation
+        function scrollScreenshots(direction) {
+            const container = document.getElementById('screenshotsScroll');
+            if (container) {
+                const scrollAmt = 260 * direction;
+                container.scrollBy({ left: scrollAmt, behavior: 'smooth' });
+            }
+        }
+
+        // Lightbox Modal
+        function openLightbox(url, title) {
+            document.getElementById('lightboxImg').src = url;
+            document.getElementById('lightboxTitle').textContent = title || 'App Screenshot Preview';
+            document.getElementById('lightboxModal').classList.add('active');
+        }
+
+        function closeLightbox() {
+            document.getElementById('lightboxModal').classList.remove('active');
+        }
+
+        // Escape Key to close Lightbox
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape') closeLightbox();
+        });
+
+        // ─── LIVE BYAJ CALCULATOR ENGINE ───
+        let activeByajType = 'simple';
+
+        function setByajType(type) {
+            activeByajType = type;
+            const btnSimple = document.getElementById('btnSimpleByaj');
+            const btnCompound = document.getElementById('btnCompoundByaj');
+
+            if (type === 'simple') {
+                btnSimple.classList.add('active');
+                btnCompound.classList.remove('active');
+            } else {
+                btnCompound.classList.add('active');
+                btnSimple.classList.remove('active');
+            }
+            runLiveByajCalculation();
+        }
+
+        function runLiveByajCalculation() {
+            const P = parseFloat(document.getElementById('calcPrincipal').value) || 0;
+            const R = parseFloat(document.getElementById('calcRate').value) || 0;
+            const M = parseFloat(document.getElementById('calcMonths').value) || 0;
+
+            let totalInterest = 0;
+            let totalPayable = P;
+            let monthlyInterest = 0;
+
+            if (P > 0 && R > 0 && M > 0) {
+                if (activeByajType === 'simple') {
+                    // Simple Interest: P * R% * M
+                    monthlyInterest = P * (R / 100);
+                    totalInterest = monthlyInterest * M;
+                    totalPayable = P + totalInterest;
+                    document.getElementById('resMode').textContent = 'Simple Byaj (Sadharan)';
+                    document.getElementById('resMonthlyByaj').textContent = '₹' + Math.round(monthlyInterest).toLocaleString('en-IN') + ' / mo';
+                } else {
+                    // Compound Interest per month: P * (1 + R/100)^M - P
+                    totalPayable = P * Math.pow(1 + (R / 100), M);
+                    totalInterest = totalPayable - P;
+                    monthlyInterest = totalInterest / M;
+                    document.getElementById('resMode').textContent = 'Compound Byaj (Chakravriddhi)';
+                    document.getElementById('resMonthlyByaj').textContent = '~₹' + Math.round(monthlyInterest).toLocaleString('en-IN') + ' avg/mo';
+                }
+            }
+
+            document.getElementById('resPrincipal').textContent = '₹' + Math.round(P).toLocaleString('en-IN');
+            document.getElementById('resTotalByaj').textContent = '₹' + Math.round(totalInterest).toLocaleString('en-IN');
+            document.getElementById('resTotalPayable').textContent = '₹' + Math.round(totalPayable).toLocaleString('en-IN');
+        }
+
+        console.log('%c🚀 UdharGuru v2.9.5 (Build 130) Loaded', 'color: #F59E0B; font-size: 16px; font-weight: bold;');
+        console.log('%cCrafted with ❤️ for Indian Merchants by Guruji Tech Point', 'color: #10B981; font-size: 12px;');
+    </script>
 </body>
 </html>
